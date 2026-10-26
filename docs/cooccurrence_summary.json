@@ -1,0 +1,366 @@
+{
+  "definition": {
+    "orders": "đơn prior; mỗi sản phẩm tối đa một dòng mỗi đơn",
+    "n_orders": 3214874,
+    "products_scope": "300 sản phẩm có số đơn cao nhất",
+    "support": "số đơn chứa cả hai / tổng số đơn prior",
+    "confidence_a_to_b": "P(B | A) = số đơn chứa cả hai / số đơn chứa A",
+    "lift": "support(A,B) / (support(A) * support(B))",
+    "min_support_pct_for_lift": 0.05,
+    "lift_selection": "top lift, mỗi sản phẩm tối đa 1 cặp và mỗi aisle tối đa 3 cặp"
+  },
+  "n_products": 300,
+  "n_pairs_evaluated": 44850,
+  "n_pairs_min_support": 4677,
+  "top_products": [
+    {
+      "product": "Banana",
+      "orders": 472565,
+      "share_pct": 14.6993
+    },
+    {
+      "product": "Bag of Organic Bananas",
+      "orders": 379450,
+      "share_pct": 11.803
+    },
+    {
+      "product": "Organic Strawberries",
+      "orders": 264683,
+      "share_pct": 8.2331
+    },
+    {
+      "product": "Organic Baby Spinach",
+      "orders": 241921,
+      "share_pct": 7.5251
+    },
+    {
+      "product": "Organic Hass Avocado",
+      "orders": 213584,
+      "share_pct": 6.6436
+    },
+    {
+      "product": "Organic Avocado",
+      "orders": 176815,
+      "share_pct": 5.4999
+    },
+    {
+      "product": "Large Lemon",
+      "orders": 152657,
+      "share_pct": 4.7485
+    },
+    {
+      "product": "Strawberries",
+      "orders": 142951,
+      "share_pct": 4.4466
+    },
+    {
+      "product": "Limes",
+      "orders": 140627,
+      "share_pct": 4.3743
+    },
+    {
+      "product": "Organic Whole Milk",
+      "orders": 137905,
+      "share_pct": 4.2896
+    },
+    {
+      "product": "Organic Raspberries",
+      "orders": 137057,
+      "share_pct": 4.2632
+    },
+    {
+      "product": "Organic Yellow Onion",
+      "orders": 113426,
+      "share_pct": 3.5282
+    },
+    {
+      "product": "Organic Garlic",
+      "orders": 109778,
+      "share_pct": 3.4147
+    },
+    {
+      "product": "Organic Zucchini",
+      "orders": 104823,
+      "share_pct": 3.2606
+    },
+    {
+      "product": "Organic Blueberries",
+      "orders": 100060,
+      "share_pct": 3.1124
+    }
+  ],
+  "top_pairs_by_count": [
+    {
+      "product_a": "Bag of Organic Bananas",
+      "product_b": "Organic Hass Avocado",
+      "orders_both": 62341,
+      "support_pct": 1.9391,
+      "confidence_a_to_b_pct": 16.4293,
+      "confidence_b_to_a_pct": 29.188,
+      "lift": 2.4729
+    },
+    {
+      "product_a": "Bag of Organic Bananas",
+      "product_b": "Organic Strawberries",
+      "orders_both": 61628,
+      "support_pct": 1.917,
+      "confidence_a_to_b_pct": 16.2414,
+      "confidence_b_to_a_pct": 23.2837,
+      "lift": 1.9727
+    },
+    {
+      "product_a": "Banana",
+      "product_b": "Organic Strawberries",
+      "orders_both": 56156,
+      "support_pct": 1.7468,
+      "confidence_a_to_b_pct": 11.8832,
+      "confidence_b_to_a_pct": 21.2163,
+      "lift": 1.4434
+    },
+    {
+      "product_a": "Banana",
+      "product_b": "Organic Avocado",
+      "orders_both": 53395,
+      "support_pct": 1.6609,
+      "confidence_a_to_b_pct": 11.299,
+      "confidence_b_to_a_pct": 30.1982,
+      "lift": 2.0544
+    },
+    {
+      "product_a": "Banana",
+      "product_b": "Organic Baby Spinach",
+      "orders_both": 51395,
+      "support_pct": 1.5987,
+      "confidence_a_to_b_pct": 10.8758,
+      "confidence_b_to_a_pct": 21.2445,
+      "lift": 1.4453
+    },
+    {
+      "product_a": "Bag of Organic Bananas",
+      "product_b": "Organic Baby Spinach",
+      "orders_both": 50372,
+      "support_pct": 1.5668,
+      "confidence_a_to_b_pct": 13.275,
+      "confidence_b_to_a_pct": 20.8217,
+      "lift": 1.7641
+    },
+    {
+      "product_a": "Banana",
+      "product_b": "Strawberries",
+      "orders_both": 41232,
+      "support_pct": 1.2825,
+      "confidence_a_to_b_pct": 8.7251,
+      "confidence_b_to_a_pct": 28.8434,
+      "lift": 1.9622
+    },
+    {
+      "product_a": "Banana",
+      "product_b": "Large Lemon",
+      "orders_both": 40880,
+      "support_pct": 1.2716,
+      "confidence_a_to_b_pct": 8.6507,
+      "confidence_b_to_a_pct": 26.779,
+      "lift": 1.8218
+    },
+    {
+      "product_a": "Organic Strawberries",
+      "product_b": "Organic Hass Avocado",
+      "orders_both": 40794,
+      "support_pct": 1.2689,
+      "confidence_a_to_b_pct": 15.4124,
+      "confidence_b_to_a_pct": 19.0997,
+      "lift": 2.3199
+    },
+    {
+      "product_a": "Bag of Organic Bananas",
+      "product_b": "Organic Raspberries",
+      "orders_both": 40502,
+      "support_pct": 1.2598,
+      "confidence_a_to_b_pct": 10.6739,
+      "confidence_b_to_a_pct": 29.5512,
+      "lift": 2.5037
+    },
+    {
+      "product_a": "Organic Strawberries",
+      "product_b": "Organic Baby Spinach",
+      "orders_both": 38134,
+      "support_pct": 1.1862,
+      "confidence_a_to_b_pct": 14.4074,
+      "confidence_b_to_a_pct": 15.763,
+      "lift": 1.9146
+    },
+    {
+      "product_a": "Organic Baby Spinach",
+      "product_b": "Organic Hass Avocado",
+      "orders_both": 34901,
+      "support_pct": 1.0856,
+      "confidence_a_to_b_pct": 14.4266,
+      "confidence_b_to_a_pct": 16.3406,
+      "lift": 2.1715
+    },
+    {
+      "product_a": "Banana",
+      "product_b": "Organic Fuji Apple",
+      "orders_both": 33943,
+      "support_pct": 1.0558,
+      "confidence_a_to_b_pct": 7.1827,
+      "confidence_b_to_a_pct": 37.8693,
+      "lift": 2.5763
+    },
+    {
+      "product_a": "Organic Strawberries",
+      "product_b": "Organic Raspberries",
+      "orders_both": 33863,
+      "support_pct": 1.0533,
+      "confidence_a_to_b_pct": 12.7938,
+      "confidence_b_to_a_pct": 24.7072,
+      "lift": 3.001
+    },
+    {
+      "product_a": "Banana",
+      "product_b": "Cucumber Kirby",
+      "orders_both": 32097,
+      "support_pct": 0.9984,
+      "confidence_a_to_b_pct": 6.7921,
+      "confidence_b_to_a_pct": 32.9826,
+      "lift": 2.2438
+    }
+  ],
+  "top_pairs_by_lift": [
+    {
+      "product_a": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+      "product_b": "Non Fat Raspberry Yogurt",
+      "orders_both": 7224,
+      "support_pct": 0.2247,
+      "confidence_a_to_b_pct": 37.5136,
+      "confidence_b_to_a_pct": 44.1106,
+      "lift": 73.6408
+    },
+    {
+      "product_a": "Total 2% Lowfat Greek Strained Yogurt With Blueberry",
+      "product_b": "Total 2% Lowfat Greek Strained Yogurt with Peach",
+      "orders_both": 6282,
+      "support_pct": 0.1954,
+      "confidence_a_to_b_pct": 30.263,
+      "confidence_b_to_a_pct": 31.5552,
+      "lift": 48.8707
+    },
+    {
+      "product_a": "Total 2% with Strawberry Lowfat Greek Strained Yogurt",
+      "product_b": "Total 2% Greek Strained Yogurt with Cherry 5.3 oz",
+      "orders_both": 5401,
+      "support_pct": 0.168,
+      "confidence_a_to_b_pct": 18.0678,
+      "confidence_b_to_a_pct": 29.9324,
+      "lift": 32.1911
+    },
+    {
+      "product_a": "Peach Pear Flavored Sparkling Water",
+      "product_b": "Sparkling Water Berry",
+      "orders_both": 3453,
+      "support_pct": 0.1074,
+      "confidence_a_to_b_pct": 16.2624,
+      "confidence_b_to_a_pct": 19.8323,
+      "lift": 30.0279
+    },
+    {
+      "product_a": "Organic Raw Kombucha Gingerade",
+      "product_b": "Trilogy Kombucha Drink",
+      "orders_both": 2939,
+      "support_pct": 0.0914,
+      "confidence_a_to_b_pct": 14.1933,
+      "confidence_b_to_a_pct": 17.5034,
+      "lift": 27.175
+    },
+    {
+      "product_a": "Pineapple Chunks",
+      "product_b": "Mango Chunks",
+      "orders_both": 3467,
+      "support_pct": 0.1078,
+      "confidence_a_to_b_pct": 13.8958,
+      "confidence_b_to_a_pct": 19.5887,
+      "lift": 25.2405
+    },
+    {
+      "product_a": "Organic Whole Strawberries",
+      "product_b": "Frozen Organic Wild Blueberries",
+      "orders_both": 6763,
+      "support_pct": 0.2104,
+      "confidence_a_to_b_pct": 21.5074,
+      "confidence_b_to_a_pct": 22.6149,
+      "lift": 23.1211
+    },
+    {
+      "product_a": "Orange Bell Pepper",
+      "product_b": "Yellow Bell Pepper",
+      "orders_both": 7124,
+      "support_pct": 0.2216,
+      "confidence_a_to_b_pct": 18.179,
+      "confidence_b_to_a_pct": 27.9822,
+      "lift": 22.9559
+    },
+    {
+      "product_a": "Lime Sparkling Water",
+      "product_b": "Sparkling Lemon Water",
+      "orders_both": 8546,
+      "support_pct": 0.2658,
+      "confidence_a_to_b_pct": 18.3603,
+      "confidence_b_to_a_pct": 26.0644,
+      "lift": 18.0024
+    },
+    {
+      "product_a": "100% Recycled Paper Towels",
+      "product_b": "Sustainably Soft Bath Tissue",
+      "orders_both": 2697,
+      "support_pct": 0.0839,
+      "confidence_a_to_b_pct": 9.6792,
+      "confidence_b_to_a_pct": 14.7935,
+      "lift": 17.0683
+    },
+    {
+      "product_a": "Organic Diced Tomatoes",
+      "product_b": "Organic Tomato Paste",
+      "orders_both": 1757,
+      "support_pct": 0.0547,
+      "confidence_a_to_b_pct": 7.9875,
+      "confidence_b_to_a_pct": 9.9665,
+      "lift": 14.5661
+    },
+    {
+      "product_a": "Raspberries",
+      "product_b": "Blackberries",
+      "orders_both": 5890,
+      "support_pct": 0.1832,
+      "confidence_a_to_b_pct": 10.2186,
+      "confidence_b_to_a_pct": 25.761,
+      "lift": 14.3682
+    },
+    {
+      "product_a": "Hass Avocados",
+      "product_b": "Baby Cucumbers",
+      "orders_both": 3177,
+      "support_pct": 0.0988,
+      "confidence_a_to_b_pct": 6.326,
+      "confidence_b_to_a_pct": 22.064,
+      "lift": 14.1242
+    },
+    {
+      "product_a": "Organic Red Bell Pepper",
+      "product_b": "Organic Bell Pepper",
+      "orders_both": 5744,
+      "support_pct": 0.1787,
+      "confidence_a_to_b_pct": 9.9922,
+      "confidence_b_to_a_pct": 24.5596,
+      "lift": 13.7351
+    },
+    {
+      "product_a": "Clementines",
+      "product_b": "Reduced Fat 2% Milk",
+      "orders_both": 1867,
+      "support_pct": 0.0581,
+      "confidence_a_to_b_pct": 6.0532,
+      "confidence_b_to_a_pct": 10.7794,
+      "lift": 11.2358
+    }
+  ]
+}

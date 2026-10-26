@@ -1,0 +1,1632 @@
+{
+  "source": [
+    "data/orders_prior.csv",
+    "data/order_products__prior.csv"
+  ],
+  "seed": 42,
+  "orders": 3214874,
+  "orders_without_items": 0,
+  "users": 206209,
+  "users_with_nan_feature": 0,
+  "basket_by_dow": [
+    {
+      "order_dow": 0,
+      "orders": 557772,
+      "mean": 11.133,
+      "q25": 5.0,
+      "median": 9.0,
+      "q75": 15.0
+    },
+    {
+      "order_dow": 1,
+      "orders": 556705,
+      "mean": 10.1775,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_dow": 2,
+      "orders": 441955,
+      "mean": 9.5435,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_dow": 3,
+      "orders": 412400,
+      "mean": 9.3213,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 12.0
+    },
+    {
+      "order_dow": 4,
+      "orders": 401212,
+      "mean": 9.4394,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_dow": 5,
+      "orders": 425982,
+      "mean": 9.882,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_dow": 6,
+      "orders": 418848,
+      "mean": 10.7445,
+      "q25": 5.0,
+      "median": 9.0,
+      "q75": 15.0
+    }
+  ],
+  "basket_by_hour": [
+    {
+      "order_hour_of_day": 0,
+      "orders": 21372,
+      "mean": 10.2446,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 1,
+      "orders": 11596,
+      "mean": 9.985,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 2,
+      "orders": 7070,
+      "mean": 9.8209,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 3,
+      "orders": 5120,
+      "mean": 10.0236,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 4,
+      "orders": 5175,
+      "mean": 10.2962,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 5,
+      "orders": 8972,
+      "mean": 9.8152,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 6,
+      "orders": 28792,
+      "mean": 10.0999,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 7,
+      "orders": 86656,
+      "mean": 10.2928,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 8,
+      "orders": 168321,
+      "mean": 10.2184,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 9,
+      "orders": 243496,
+      "mean": 10.0893,
+      "q25": 4.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 10,
+      "orders": 271885,
+      "mean": 10.1676,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 11,
+      "orders": 268006,
+      "mean": 10.2184,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 12,
+      "orders": 256206,
+      "mean": 10.2295,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 13,
+      "orders": 261174,
+      "mean": 10.1974,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 14,
+      "orders": 265556,
+      "mean": 10.1355,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 14.0
+    },
+    {
+      "order_hour_of_day": 15,
+      "orders": 266132,
+      "mean": 10.0121,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 16,
+      "orders": 255949,
+      "mean": 9.9139,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 17,
+      "orders": 214080,
+      "mean": 9.7602,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 18,
+      "orders": 170998,
+      "mean": 9.5786,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 19,
+      "orders": 131620,
+      "mean": 9.5685,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 20,
+      "orders": 98109,
+      "mean": 9.9587,
+      "q25": 5.0,
+      "median": 8.0,
+      "q75": 13.0
+    },
+    {
+      "order_hour_of_day": 21,
+      "orders": 73436,
+      "mean": 10.8444,
+      "q25": 5.0,
+      "median": 9.0,
+      "q75": 15.0
+    },
+    {
+      "order_hour_of_day": 22,
+      "orders": 57540,
+      "mean": 11.0312,
+      "q25": 5.0,
+      "median": 9.0,
+      "q75": 15.0
+    },
+    {
+      "order_hour_of_day": 23,
+      "orders": 37613,
+      "mean": 10.7043,
+      "q25": 5.0,
+      "median": 9.0,
+      "q75": 14.0
+    }
+  ],
+  "customer": {
+    "n_orders": {
+      "median": 9.0,
+      "q25": 5.0,
+      "q75": 19.0,
+      "mean": 15.5904,
+      "min": 3.0,
+      "max": 99.0
+    },
+    "distinct_products": {
+      "median": 48.0,
+      "q25": 25.0,
+      "q75": 86.0,
+      "mean": 64.5362,
+      "min": 1.0,
+      "max": 726.0
+    },
+    "mean_basket": {
+      "median": 8.9333,
+      "q25": 5.7407,
+      "q75": 13.0,
+      "mean": 9.9516,
+      "min": 1.0,
+      "max": 70.25
+    },
+    "reorder_rate": {
+      "median": 0.5,
+      "q25": 0.3333,
+      "q75": 0.6552,
+      "mean": 0.4898,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "mean_gap": {
+      "median": 14.5,
+      "q25": 9.4167,
+      "q75": 20.2857,
+      "mean": 15.2094,
+      "min": 0.0,
+      "max": 30.0
+    }
+  },
+  "spearman_orders_vs_diversity": 0.6736,
+  "diversity_by_orders": [
+    {
+      "orders_range": "4-5",
+      "orders_mid": 4.5,
+      "customers": 35755,
+      "median": 28.0,
+      "mean": 30.9622
+    },
+    {
+      "orders_range": "6-8",
+      "orders_mid": 7.0,
+      "customers": 35740,
+      "median": 39.0,
+      "mean": 42.5788
+    },
+    {
+      "orders_range": "9-12",
+      "orders_mid": 10.5,
+      "customers": 30035,
+      "median": 53.0,
+      "mean": 56.5735
+    },
+    {
+      "orders_range": "13-20",
+      "orders_mid": 16.5,
+      "customers": 32883,
+      "median": 71.0,
+      "mean": 75.2311
+    },
+    {
+      "orders_range": "21-35",
+      "orders_mid": 28.0,
+      "customers": 26118,
+      "median": 98.0,
+      "mean": 102.9918
+    },
+    {
+      "orders_range": "36-60",
+      "orders_mid": 48.0,
+      "customers": 15427,
+      "median": 132.0,
+      "mean": 138.3668
+    },
+    {
+      "orders_range": "61-100",
+      "orders_mid": 80.5,
+      "customers": 6265,
+      "median": 175.0,
+      "mean": 181.1382
+    }
+  ],
+  "reorder": {
+    "all_lines": 32434489,
+    "all_reordered": 19126536,
+    "all_rate_pct": 58.9697,
+    "eligible_lines": 30356421,
+    "eligible_reordered": 19126536,
+    "eligible_rate_pct": 63.0066,
+    "by_order_number": [
+      {
+        "order_number": 2,
+        "orders": 206209,
+        "lines": 2048332,
+        "pooled_rate": 0.2724,
+        "q25": 0.0588,
+        "median": 0.2353,
+        "q75": 0.4444
+      },
+      {
+        "order_number": 3,
+        "orders": 206209,
+        "lines": 2050731,
+        "pooled_rate": 0.3863,
+        "q25": 0.1739,
+        "median": 0.375,
+        "q75": 0.6
+      },
+      {
+        "order_number": 4,
+        "orders": 182223,
+        "lines": 1820298,
+        "pooled_rate": 0.4583,
+        "q25": 0.25,
+        "median": 0.4737,
+        "q75": 0.6667
+      },
+      {
+        "order_number": 5,
+        "orders": 162633,
+        "lines": 1628411,
+        "pooled_rate": 0.5074,
+        "q25": 0.3043,
+        "median": 0.5,
+        "q75": 0.75
+      },
+      {
+        "order_number": 6,
+        "orders": 146468,
+        "lines": 1472238,
+        "pooled_rate": 0.5451,
+        "q25": 0.3333,
+        "median": 0.5714,
+        "q75": 0.8
+      },
+      {
+        "order_number": 7,
+        "orders": 132618,
+        "lines": 1333847,
+        "pooled_rate": 0.5759,
+        "q25": 0.375,
+        "median": 0.6,
+        "q75": 0.8333
+      },
+      {
+        "order_number": 8,
+        "orders": 120918,
+        "lines": 1219148,
+        "pooled_rate": 0.599,
+        "q25": 0.4,
+        "median": 0.6364,
+        "q75": 0.8571
+      },
+      {
+        "order_number": 9,
+        "orders": 110728,
+        "lines": 1120468,
+        "pooled_rate": 0.6201,
+        "q25": 0.4348,
+        "median": 0.6667,
+        "q75": 0.875
+      },
+      {
+        "order_number": 10,
+        "orders": 101696,
+        "lines": 1028704,
+        "pooled_rate": 0.6366,
+        "q25": 0.4615,
+        "median": 0.6667,
+        "q75": 0.8889
+      },
+      {
+        "order_number": 11,
+        "orders": 93881,
+        "lines": 950655,
+        "pooled_rate": 0.6522,
+        "q25": 0.5,
+        "median": 0.697,
+        "q75": 0.9091
+      },
+      {
+        "order_number": 12,
+        "orders": 86929,
+        "lines": 877632,
+        "pooled_rate": 0.6677,
+        "q25": 0.5,
+        "median": 0.7143,
+        "q75": 0.9231
+      },
+      {
+        "order_number": 13,
+        "orders": 80693,
+        "lines": 819712,
+        "pooled_rate": 0.678,
+        "q25": 0.5,
+        "median": 0.7333,
+        "q75": 0.9412
+      },
+      {
+        "order_number": 14,
+        "orders": 75080,
+        "lines": 761900,
+        "pooled_rate": 0.6896,
+        "q25": 0.5,
+        "median": 0.75,
+        "q75": 1.0
+      },
+      {
+        "order_number": 15,
+        "orders": 69889,
+        "lines": 707209,
+        "pooled_rate": 0.6993,
+        "q25": 0.5238,
+        "median": 0.75,
+        "q75": 1.0
+      },
+      {
+        "order_number": 16,
+        "orders": 65296,
+        "lines": 662551,
+        "pooled_rate": 0.7089,
+        "q25": 0.5455,
+        "median": 0.7692,
+        "q75": 1.0
+      },
+      {
+        "order_number": 17,
+        "orders": 61157,
+        "lines": 622131,
+        "pooled_rate": 0.7155,
+        "q25": 0.5556,
+        "median": 0.7727,
+        "q75": 1.0
+      },
+      {
+        "order_number": 18,
+        "orders": 57321,
+        "lines": 584367,
+        "pooled_rate": 0.7222,
+        "q25": 0.5714,
+        "median": 0.7826,
+        "q75": 1.0
+      },
+      {
+        "order_number": 19,
+        "orders": 53931,
+        "lines": 549722,
+        "pooled_rate": 0.731,
+        "q25": 0.5769,
+        "median": 0.8,
+        "q75": 1.0
+      },
+      {
+        "order_number": 20,
+        "orders": 50731,
+        "lines": 515000,
+        "pooled_rate": 0.7375,
+        "q25": 0.6,
+        "median": 0.8,
+        "q75": 1.0
+      },
+      {
+        "order_number": 21,
+        "orders": 47810,
+        "lines": 486768,
+        "pooled_rate": 0.7421,
+        "q25": 0.6,
+        "median": 0.8,
+        "q75": 1.0
+      },
+      {
+        "order_number": 22,
+        "orders": 45104,
+        "lines": 459163,
+        "pooled_rate": 0.7478,
+        "q25": 0.6,
+        "median": 0.8125,
+        "q75": 1.0
+      },
+      {
+        "order_number": 23,
+        "orders": 42499,
+        "lines": 434298,
+        "pooled_rate": 0.7515,
+        "q25": 0.6129,
+        "median": 0.8182,
+        "q75": 1.0
+      },
+      {
+        "order_number": 24,
+        "orders": 40211,
+        "lines": 409862,
+        "pooled_rate": 0.7573,
+        "q25": 0.619,
+        "median": 0.8261,
+        "q75": 1.0
+      },
+      {
+        "order_number": 25,
+        "orders": 38025,
+        "lines": 389935,
+        "pooled_rate": 0.7598,
+        "q25": 0.625,
+        "median": 0.8333,
+        "q75": 1.0
+      },
+      {
+        "order_number": 26,
+        "orders": 35965,
+        "lines": 369822,
+        "pooled_rate": 0.7639,
+        "q25": 0.625,
+        "median": 0.8333,
+        "q75": 1.0
+      },
+      {
+        "order_number": 27,
+        "orders": 34057,
+        "lines": 350825,
+        "pooled_rate": 0.7679,
+        "q25": 0.6364,
+        "median": 0.8333,
+        "q75": 1.0
+      },
+      {
+        "order_number": 28,
+        "orders": 32278,
+        "lines": 332877,
+        "pooled_rate": 0.7701,
+        "q25": 0.6471,
+        "median": 0.8333,
+        "q75": 1.0
+      },
+      {
+        "order_number": 29,
+        "orders": 30677,
+        "lines": 315711,
+        "pooled_rate": 0.7744,
+        "q25": 0.6667,
+        "median": 0.8462,
+        "q75": 1.0
+      },
+      {
+        "order_number": 30,
+        "orders": 29183,
+        "lines": 300474,
+        "pooled_rate": 0.7781,
+        "q25": 0.6667,
+        "median": 0.8421,
+        "q75": 1.0
+      },
+      {
+        "order_number": 31,
+        "orders": 27709,
+        "lines": 287897,
+        "pooled_rate": 0.7792,
+        "q25": 0.6667,
+        "median": 0.8421,
+        "q75": 1.0
+      },
+      {
+        "order_number": 32,
+        "orders": 26323,
+        "lines": 273721,
+        "pooled_rate": 0.7814,
+        "q25": 0.6667,
+        "median": 0.8462,
+        "q75": 1.0
+      },
+      {
+        "order_number": 33,
+        "orders": 25050,
+        "lines": 259167,
+        "pooled_rate": 0.7862,
+        "q25": 0.6667,
+        "median": 0.8571,
+        "q75": 1.0
+      },
+      {
+        "order_number": 34,
+        "orders": 23864,
+        "lines": 246544,
+        "pooled_rate": 0.7885,
+        "q25": 0.6667,
+        "median": 0.8571,
+        "q75": 1.0
+      },
+      {
+        "order_number": 35,
+        "orders": 22707,
+        "lines": 234705,
+        "pooled_rate": 0.7929,
+        "q25": 0.6667,
+        "median": 0.8571,
+        "q75": 1.0
+      },
+      {
+        "order_number": 36,
+        "orders": 21692,
+        "lines": 224718,
+        "pooled_rate": 0.7982,
+        "q25": 0.6667,
+        "median": 0.8571,
+        "q75": 1.0
+      },
+      {
+        "order_number": 37,
+        "orders": 20644,
+        "lines": 214156,
+        "pooled_rate": 0.7932,
+        "q25": 0.6667,
+        "median": 0.8571,
+        "q75": 1.0
+      },
+      {
+        "order_number": 38,
+        "orders": 19684,
+        "lines": 203048,
+        "pooled_rate": 0.7984,
+        "q25": 0.6667,
+        "median": 0.8667,
+        "q75": 1.0
+      },
+      {
+        "order_number": 39,
+        "orders": 18780,
+        "lines": 194520,
+        "pooled_rate": 0.7994,
+        "q25": 0.6667,
+        "median": 0.8571,
+        "q75": 1.0
+      },
+      {
+        "order_number": 40,
+        "orders": 17902,
+        "lines": 185728,
+        "pooled_rate": 0.8011,
+        "q25": 0.6667,
+        "median": 0.8667,
+        "q75": 1.0
+      },
+      {
+        "order_number": 41,
+        "orders": 17017,
+        "lines": 175372,
+        "pooled_rate": 0.8044,
+        "q25": 0.6875,
+        "median": 0.8696,
+        "q75": 1.0
+      },
+      {
+        "order_number": 42,
+        "orders": 16203,
+        "lines": 168306,
+        "pooled_rate": 0.8091,
+        "q25": 0.6923,
+        "median": 0.875,
+        "q75": 1.0
+      },
+      {
+        "order_number": 43,
+        "orders": 15460,
+        "lines": 160463,
+        "pooled_rate": 0.8099,
+        "q25": 0.6923,
+        "median": 0.875,
+        "q75": 1.0
+      },
+      {
+        "order_number": 44,
+        "orders": 14736,
+        "lines": 152499,
+        "pooled_rate": 0.8103,
+        "q25": 0.6944,
+        "median": 0.875,
+        "q75": 1.0
+      },
+      {
+        "order_number": 45,
+        "orders": 14029,
+        "lines": 144901,
+        "pooled_rate": 0.8088,
+        "q25": 0.6875,
+        "median": 0.875,
+        "q75": 1.0
+      },
+      {
+        "order_number": 46,
+        "orders": 13372,
+        "lines": 137752,
+        "pooled_rate": 0.8126,
+        "q25": 0.7,
+        "median": 0.875,
+        "q75": 1.0
+      },
+      {
+        "order_number": 47,
+        "orders": 12697,
+        "lines": 130057,
+        "pooled_rate": 0.8126,
+        "q25": 0.7,
+        "median": 0.875,
+        "q75": 1.0
+      },
+      {
+        "order_number": 48,
+        "orders": 12043,
+        "lines": 124069,
+        "pooled_rate": 0.813,
+        "q25": 0.7,
+        "median": 0.875,
+        "q75": 1.0
+      },
+      {
+        "order_number": 49,
+        "orders": 11464,
+        "lines": 117246,
+        "pooled_rate": 0.82,
+        "q25": 0.7143,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 50,
+        "orders": 10910,
+        "lines": 110933,
+        "pooled_rate": 0.819,
+        "q25": 0.7143,
+        "median": 0.8824,
+        "q75": 1.0
+      },
+      {
+        "order_number": 51,
+        "orders": 10328,
+        "lines": 104805,
+        "pooled_rate": 0.8177,
+        "q25": 0.7143,
+        "median": 0.8824,
+        "q75": 1.0
+      },
+      {
+        "order_number": 52,
+        "orders": 9801,
+        "lines": 99195,
+        "pooled_rate": 0.8157,
+        "q25": 0.7143,
+        "median": 0.8824,
+        "q75": 1.0
+      },
+      {
+        "order_number": 53,
+        "orders": 9277,
+        "lines": 93077,
+        "pooled_rate": 0.8163,
+        "q25": 0.7059,
+        "median": 0.875,
+        "q75": 1.0
+      },
+      {
+        "order_number": 54,
+        "orders": 8778,
+        "lines": 87490,
+        "pooled_rate": 0.8206,
+        "q25": 0.7143,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 55,
+        "orders": 8353,
+        "lines": 84281,
+        "pooled_rate": 0.82,
+        "q25": 0.7143,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 56,
+        "orders": 7963,
+        "lines": 78719,
+        "pooled_rate": 0.8237,
+        "q25": 0.7143,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 57,
+        "orders": 7567,
+        "lines": 74639,
+        "pooled_rate": 0.8236,
+        "q25": 0.7143,
+        "median": 0.8824,
+        "q75": 1.0
+      },
+      {
+        "order_number": 58,
+        "orders": 7224,
+        "lines": 71264,
+        "pooled_rate": 0.8225,
+        "q25": 0.7143,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 59,
+        "orders": 6892,
+        "lines": 67688,
+        "pooled_rate": 0.8225,
+        "q25": 0.7143,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 60,
+        "orders": 6589,
+        "lines": 65017,
+        "pooled_rate": 0.8266,
+        "q25": 0.7143,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 61,
+        "orders": 6265,
+        "lines": 61181,
+        "pooled_rate": 0.825,
+        "q25": 0.7143,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 62,
+        "orders": 5989,
+        "lines": 58131,
+        "pooled_rate": 0.8231,
+        "q25": 0.7143,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 63,
+        "orders": 5722,
+        "lines": 55223,
+        "pooled_rate": 0.827,
+        "q25": 0.7191,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 64,
+        "orders": 5468,
+        "lines": 52831,
+        "pooled_rate": 0.829,
+        "q25": 0.72,
+        "median": 0.8947,
+        "q75": 1.0
+      },
+      {
+        "order_number": 65,
+        "orders": 5229,
+        "lines": 49863,
+        "pooled_rate": 0.8293,
+        "q25": 0.7308,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 66,
+        "orders": 4991,
+        "lines": 47822,
+        "pooled_rate": 0.8275,
+        "q25": 0.7143,
+        "median": 0.9,
+        "q75": 1.0
+      },
+      {
+        "order_number": 67,
+        "orders": 4787,
+        "lines": 45994,
+        "pooled_rate": 0.8275,
+        "q25": 0.7273,
+        "median": 0.9,
+        "q75": 1.0
+      },
+      {
+        "order_number": 68,
+        "orders": 4598,
+        "lines": 44421,
+        "pooled_rate": 0.8311,
+        "q25": 0.7273,
+        "median": 0.9,
+        "q75": 1.0
+      },
+      {
+        "order_number": 69,
+        "orders": 4413,
+        "lines": 42452,
+        "pooled_rate": 0.8326,
+        "q25": 0.7333,
+        "median": 0.9,
+        "q75": 1.0
+      },
+      {
+        "order_number": 70,
+        "orders": 4235,
+        "lines": 40778,
+        "pooled_rate": 0.834,
+        "q25": 0.75,
+        "median": 0.9,
+        "q75": 1.0
+      },
+      {
+        "order_number": 71,
+        "orders": 4081,
+        "lines": 38337,
+        "pooled_rate": 0.8283,
+        "q25": 0.7273,
+        "median": 0.8889,
+        "q75": 1.0
+      },
+      {
+        "order_number": 72,
+        "orders": 3915,
+        "lines": 37475,
+        "pooled_rate": 0.8334,
+        "q25": 0.7333,
+        "median": 0.9,
+        "q75": 1.0
+      },
+      {
+        "order_number": 73,
+        "orders": 3777,
+        "lines": 36001,
+        "pooled_rate": 0.8364,
+        "q25": 0.75,
+        "median": 0.9091,
+        "q75": 1.0
+      },
+      {
+        "order_number": 74,
+        "orders": 3615,
+        "lines": 33986,
+        "pooled_rate": 0.8381,
+        "q25": 0.75,
+        "median": 0.9091,
+        "q75": 1.0
+      },
+      {
+        "order_number": 75,
+        "orders": 3453,
+        "lines": 32956,
+        "pooled_rate": 0.8379,
+        "q25": 0.75,
+        "median": 0.9,
+        "q75": 1.0
+      },
+      {
+        "order_number": 76,
+        "orders": 3319,
+        "lines": 31083,
+        "pooled_rate": 0.8355,
+        "q25": 0.75,
+        "median": 0.9,
+        "q75": 1.0
+      },
+      {
+        "order_number": 77,
+        "orders": 3199,
+        "lines": 29579,
+        "pooled_rate": 0.8443,
+        "q25": 0.75,
+        "median": 0.9091,
+        "q75": 1.0
+      },
+      {
+        "order_number": 78,
+        "orders": 3072,
+        "lines": 28675,
+        "pooled_rate": 0.8373,
+        "q25": 0.75,
+        "median": 0.9091,
+        "q75": 1.0
+      },
+      {
+        "order_number": 79,
+        "orders": 2945,
+        "lines": 27776,
+        "pooled_rate": 0.8416,
+        "q25": 0.75,
+        "median": 0.9091,
+        "q75": 1.0
+      },
+      {
+        "order_number": 80,
+        "orders": 2829,
+        "lines": 26191,
+        "pooled_rate": 0.8375,
+        "q25": 0.75,
+        "median": 0.9091,
+        "q75": 1.0
+      },
+      {
+        "order_number": 81,
+        "orders": 2721,
+        "lines": 25261,
+        "pooled_rate": 0.8414,
+        "q25": 0.75,
+        "median": 0.9,
+        "q75": 1.0
+      },
+      {
+        "order_number": 82,
+        "orders": 2602,
+        "lines": 23629,
+        "pooled_rate": 0.8443,
+        "q25": 0.75,
+        "median": 0.9167,
+        "q75": 1.0
+      },
+      {
+        "order_number": 83,
+        "orders": 2516,
+        "lines": 23679,
+        "pooled_rate": 0.8487,
+        "q25": 0.75,
+        "median": 0.9111,
+        "q75": 1.0
+      },
+      {
+        "order_number": 84,
+        "orders": 2417,
+        "lines": 22499,
+        "pooled_rate": 0.8417,
+        "q25": 0.75,
+        "median": 0.9091,
+        "q75": 1.0
+      },
+      {
+        "order_number": 85,
+        "orders": 2317,
+        "lines": 21520,
+        "pooled_rate": 0.842,
+        "q25": 0.75,
+        "median": 0.9091,
+        "q75": 1.0
+      },
+      {
+        "order_number": 86,
+        "orders": 2224,
+        "lines": 20171,
+        "pooled_rate": 0.8435,
+        "q25": 0.75,
+        "median": 0.914,
+        "q75": 1.0
+      },
+      {
+        "order_number": 87,
+        "orders": 2146,
+        "lines": 19556,
+        "pooled_rate": 0.8493,
+        "q25": 0.75,
+        "median": 0.913,
+        "q75": 1.0
+      },
+      {
+        "order_number": 88,
+        "orders": 2067,
+        "lines": 18633,
+        "pooled_rate": 0.8512,
+        "q25": 0.75,
+        "median": 0.9259,
+        "q75": 1.0
+      },
+      {
+        "order_number": 89,
+        "orders": 1990,
+        "lines": 18096,
+        "pooled_rate": 0.8533,
+        "q25": 0.75,
+        "median": 0.9231,
+        "q75": 1.0
+      },
+      {
+        "order_number": 90,
+        "orders": 1905,
+        "lines": 17209,
+        "pooled_rate": 0.8457,
+        "q25": 0.75,
+        "median": 0.913,
+        "q75": 1.0
+      },
+      {
+        "order_number": 91,
+        "orders": 1849,
+        "lines": 16862,
+        "pooled_rate": 0.8459,
+        "q25": 0.75,
+        "median": 0.9091,
+        "q75": 1.0
+      },
+      {
+        "order_number": 92,
+        "orders": 1780,
+        "lines": 16229,
+        "pooled_rate": 0.855,
+        "q25": 0.75,
+        "median": 0.9298,
+        "q75": 1.0
+      },
+      {
+        "order_number": 93,
+        "orders": 1713,
+        "lines": 15407,
+        "pooled_rate": 0.857,
+        "q25": 0.7778,
+        "median": 0.931,
+        "q75": 1.0
+      },
+      {
+        "order_number": 94,
+        "orders": 1656,
+        "lines": 15212,
+        "pooled_rate": 0.8552,
+        "q25": 0.764,
+        "median": 0.9231,
+        "q75": 1.0
+      },
+      {
+        "order_number": 95,
+        "orders": 1592,
+        "lines": 14528,
+        "pooled_rate": 0.8578,
+        "q25": 0.7778,
+        "median": 0.9286,
+        "q75": 1.0
+      },
+      {
+        "order_number": 96,
+        "orders": 1525,
+        "lines": 13746,
+        "pooled_rate": 0.8434,
+        "q25": 0.75,
+        "median": 0.9167,
+        "q75": 1.0
+      },
+      {
+        "order_number": 97,
+        "orders": 1471,
+        "lines": 13367,
+        "pooled_rate": 0.8539,
+        "q25": 0.7619,
+        "median": 0.9286,
+        "q75": 1.0
+      },
+      {
+        "order_number": 98,
+        "orders": 1421,
+        "lines": 12858,
+        "pooled_rate": 0.8536,
+        "q25": 0.75,
+        "median": 0.9167,
+        "q75": 1.0
+      },
+      {
+        "order_number": 99,
+        "orders": 1374,
+        "lines": 12436,
+        "pooled_rate": 0.8426,
+        "q25": 0.75,
+        "median": 0.9024,
+        "q75": 1.0
+      }
+    ],
+    "by_days_since_prior": [
+      {
+        "gap": 0,
+        "orders": 64436,
+        "lines": 448698,
+        "pooled_rate": 0.7388,
+        "q25": 0.4545,
+        "median": 0.8667,
+        "q75": 1.0
+      },
+      {
+        "gap": 1,
+        "orders": 141011,
+        "lines": 941116,
+        "pooled_rate": 0.6176,
+        "q25": 0.3333,
+        "median": 0.6667,
+        "q75": 1.0
+      },
+      {
+        "gap": 2,
+        "orders": 187723,
+        "lines": 1464875,
+        "pooled_rate": 0.6454,
+        "q25": 0.4286,
+        "median": 0.7143,
+        "q75": 1.0
+      },
+      {
+        "gap": 3,
+        "orders": 210665,
+        "lines": 1877881,
+        "pooled_rate": 0.6686,
+        "q25": 0.5,
+        "median": 0.75,
+        "q75": 1.0
+      },
+      {
+        "gap": 4,
+        "orders": 214488,
+        "lines": 2080560,
+        "pooled_rate": 0.6776,
+        "q25": 0.5,
+        "median": 0.75,
+        "q75": 1.0
+      },
+      {
+        "gap": 5,
+        "orders": 206691,
+        "lines": 2126420,
+        "pooled_rate": 0.674,
+        "q25": 0.5,
+        "median": 0.75,
+        "q75": 0.9767
+      },
+      {
+        "gap": 6,
+        "orders": 230245,
+        "lines": 2519939,
+        "pooled_rate": 0.6771,
+        "q25": 0.5,
+        "median": 0.75,
+        "q75": 0.9444
+      },
+      {
+        "gap": 7,
+        "orders": 306181,
+        "lines": 3479504,
+        "pooled_rate": 0.6937,
+        "q25": 0.5,
+        "median": 0.75,
+        "q75": 0.963
+      },
+      {
+        "gap": 8,
+        "orders": 173259,
+        "lines": 1933815,
+        "pooled_rate": 0.6703,
+        "q25": 0.5,
+        "median": 0.7273,
+        "q75": 0.9286
+      },
+      {
+        "gap": 9,
+        "orders": 112184,
+        "lines": 1218973,
+        "pooled_rate": 0.651,
+        "q25": 0.4545,
+        "median": 0.7,
+        "q75": 0.9231
+      },
+      {
+        "gap": 10,
+        "orders": 90198,
+        "lines": 968153,
+        "pooled_rate": 0.6439,
+        "q25": 0.4444,
+        "median": 0.7,
+        "q75": 0.9231
+      },
+      {
+        "gap": 11,
+        "orders": 76394,
+        "lines": 821515,
+        "pooled_rate": 0.6317,
+        "q25": 0.4286,
+        "median": 0.6667,
+        "q75": 0.9091
+      },
+      {
+        "gap": 12,
+        "orders": 71356,
+        "lines": 774869,
+        "pooled_rate": 0.6257,
+        "q25": 0.4286,
+        "median": 0.6667,
+        "q75": 0.9
+      },
+      {
+        "gap": 13,
+        "orders": 77765,
+        "lines": 851878,
+        "pooled_rate": 0.6212,
+        "q25": 0.4167,
+        "median": 0.6667,
+        "q75": 0.8947
+      },
+      {
+        "gap": 14,
+        "orders": 93064,
+        "lines": 1030605,
+        "pooled_rate": 0.6283,
+        "q25": 0.4286,
+        "median": 0.6667,
+        "q75": 0.9
+      },
+      {
+        "gap": 15,
+        "orders": 61883,
+        "lines": 672080,
+        "pooled_rate": 0.6162,
+        "q25": 0.4,
+        "median": 0.6667,
+        "q75": 0.8889
+      },
+      {
+        "gap": 16,
+        "orders": 43423,
+        "lines": 461801,
+        "pooled_rate": 0.6013,
+        "q25": 0.3889,
+        "median": 0.65,
+        "q75": 0.875
+      },
+      {
+        "gap": 17,
+        "orders": 36281,
+        "lines": 382465,
+        "pooled_rate": 0.5961,
+        "q25": 0.375,
+        "median": 0.6364,
+        "q75": 0.875
+      },
+      {
+        "gap": 18,
+        "orders": 33050,
+        "lines": 350907,
+        "pooled_rate": 0.5853,
+        "q25": 0.375,
+        "median": 0.625,
+        "q75": 0.8667
+      },
+      {
+        "gap": 19,
+        "orders": 31408,
+        "lines": 335165,
+        "pooled_rate": 0.5838,
+        "q25": 0.3636,
+        "median": 0.625,
+        "q75": 0.8667
+      },
+      {
+        "gap": 20,
+        "orders": 35173,
+        "lines": 380077,
+        "pooled_rate": 0.5818,
+        "q25": 0.3636,
+        "median": 0.619,
+        "q75": 0.8571
+      },
+      {
+        "gap": 21,
+        "orders": 41262,
+        "lines": 444557,
+        "pooled_rate": 0.5841,
+        "q25": 0.375,
+        "median": 0.625,
+        "q75": 0.8571
+      },
+      {
+        "gap": 22,
+        "orders": 29125,
+        "lines": 309118,
+        "pooled_rate": 0.5782,
+        "q25": 0.35,
+        "median": 0.6,
+        "q75": 0.8571
+      },
+      {
+        "gap": 23,
+        "orders": 21629,
+        "lines": 226030,
+        "pooled_rate": 0.5621,
+        "q25": 0.3333,
+        "median": 0.6,
+        "q75": 0.8462
+      },
+      {
+        "gap": 24,
+        "orders": 18704,
+        "lines": 193590,
+        "pooled_rate": 0.5567,
+        "q25": 0.3333,
+        "median": 0.5882,
+        "q75": 0.8333
+      },
+      {
+        "gap": 25,
+        "orders": 17324,
+        "lines": 180584,
+        "pooled_rate": 0.5507,
+        "q25": 0.3333,
+        "median": 0.5714,
+        "q75": 0.8333
+      },
+      {
+        "gap": 26,
+        "orders": 17120,
+        "lines": 177949,
+        "pooled_rate": 0.5415,
+        "q25": 0.3333,
+        "median": 0.5714,
+        "q75": 0.8333
+      },
+      {
+        "gap": 27,
+        "orders": 19677,
+        "lines": 204251,
+        "pooled_rate": 0.5466,
+        "q25": 0.3333,
+        "median": 0.5714,
+        "q75": 0.8333
+      },
+      {
+        "gap": 28,
+        "orders": 23833,
+        "lines": 253349,
+        "pooled_rate": 0.5505,
+        "q25": 0.3333,
+        "median": 0.5714,
+        "q75": 0.8333
+      },
+      {
+        "gap": 29,
+        "orders": 16976,
+        "lines": 175640,
+        "pooled_rate": 0.5431,
+        "q25": 0.3333,
+        "median": 0.5652,
+        "q75": 0.8333
+      },
+      {
+        "gap": 30,
+        "orders": 306137,
+        "lines": 3070057,
+        "pooled_rate": 0.4556,
+        "q25": 0.2,
+        "median": 0.4643,
+        "q75": 0.75
+      }
+    ]
+  },
+  "segments": {
+    "features": [
+      "mean_gap",
+      "mean_basket",
+      "distinct_products",
+      "reorder_rate"
+    ],
+    "transform": "log1p cho mean_gap, mean_basket, distinct_products; z-score cả bốn đặc trưng",
+    "grouping": "tertile của mean_gap (số ngày trung bình giữa hai đơn prior)",
+    "pca_explained_variance_pct": [
+      47.8776,
+      30.3873,
+      16.6413,
+      5.0937
+    ],
+    "loadings_pc1_pc2": {
+      "mean_gap": [
+        -0.3997,
+        0.5673
+      ],
+      "mean_basket": [
+        0.5576,
+        0.491
+      ],
+      "distinct_products": [
+        0.6569,
+        0.2243
+      ],
+      "reorder_rate": [
+        0.3126,
+        -0.6219
+      ]
+    },
+    "spearman": {
+      "mean_gap": {
+        "mean_gap": 1.0,
+        "mean_basket": -0.0395,
+        "distinct_products": -0.3837,
+        "reorder_rate": -0.3749
+      },
+      "mean_basket": {
+        "mean_gap": -0.0395,
+        "mean_basket": 1.0,
+        "distinct_products": 0.6776,
+        "reorder_rate": 0.0771
+      },
+      "distinct_products": {
+        "mean_gap": -0.3837,
+        "mean_basket": 0.6776,
+        "distinct_products": 1.0,
+        "reorder_rate": 0.2214
+      },
+      "reorder_rate": {
+        "mean_gap": -0.3749,
+        "mean_basket": 0.0771,
+        "distinct_products": 0.2214,
+        "reorder_rate": 1.0
+      }
+    },
+    "scatter_sample": 6000,
+    "groups": [
+      {
+        "group": "Khoảng cách ngắn",
+        "customers": 68746,
+        "mean_gap_range": [
+          0.0,
+          11.0714
+        ],
+        "median_n_orders": 22.0,
+        "median_distinct_products": 73.0,
+        "median_mean_basket": 9.0,
+        "median_reorder_rate": 0.6154,
+        "median_mean_gap": 7.7375
+      },
+      {
+        "group": "Khoảng cách vừa",
+        "customers": 68874,
+        "mean_gap_range": [
+          11.0741,
+          18.2
+        ],
+        "median_n_orders": 11.0,
+        "median_distinct_products": 52.0,
+        "median_mean_basket": 9.0,
+        "median_reorder_rate": 0.5,
+        "median_mean_gap": 14.5
+      },
+      {
+        "group": "Khoảng cách dài",
+        "customers": 68589,
+        "mean_gap_range": [
+          18.2105,
+          30.0
+        ],
+        "median_n_orders": 6.0,
+        "median_distinct_products": 33.0,
+        "median_mean_basket": 8.6364,
+        "median_reorder_rate": 0.3937,
+        "median_mean_gap": 22.7143
+      }
+    ]
+  }
+}

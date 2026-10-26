@@ -1,0 +1,204 @@
+{
+  "source": [
+    "data/order_products__prior.csv",
+    "data/orders_prior.csv",
+    "data/products.csv",
+    "data/departments.csv"
+  ],
+  "seed": 42,
+  "orders": 3214874,
+  "department_order_share_pct": {
+    "produce": 74.9429,
+    "dairy eggs": 67.727,
+    "beverages": 45.3315,
+    "snacks": 43.2815,
+    "frozen": 36.7361,
+    "pantry": 34.7725,
+    "bakery": 27.4212,
+    "deli": 23.9605,
+    "canned goods": 21.1923,
+    "dry goods pasta": 18.5967,
+    "meat seafood": 17.8772,
+    "breakfast": 16.3362,
+    "household": 14.6438,
+    "personal care": 9.9088,
+    "international": 6.891,
+    "babies": 5.5278,
+    "alcohol": 2.6343,
+    "missing": 1.8501,
+    "pets": 1.844,
+    "other": 1.0904,
+    "bulk": 1.0514
+  },
+  "department_pairs": 210,
+  "department_top_pairs_by_support": [
+    {
+      "department_a": "produce",
+      "department_b": "dairy eggs",
+      "orders_both": 1769735,
+      "support_pct": 55.0483,
+      "lift": 1.0846
+    },
+    {
+      "department_a": "produce",
+      "department_b": "snacks",
+      "orders_both": 1084254,
+      "support_pct": 33.7262,
+      "lift": 1.0398
+    },
+    {
+      "department_a": "produce",
+      "department_b": "beverages",
+      "orders_both": 1072365,
+      "support_pct": 33.3564,
+      "lift": 0.9819
+    },
+    {
+      "department_a": "dairy eggs",
+      "department_b": "snacks",
+      "orders_both": 1036951,
+      "support_pct": 32.2548,
+      "lift": 1.1003
+    },
+    {
+      "department_a": "dairy eggs",
+      "department_b": "beverages",
+      "orders_both": 1031132,
+      "support_pct": 32.0738,
+      "lift": 1.0447
+    },
+    {
+      "department_a": "produce",
+      "department_b": "frozen",
+      "orders_both": 958413,
+      "support_pct": 29.8118,
+      "lift": 1.0828
+    },
+    {
+      "department_a": "produce",
+      "department_b": "pantry",
+      "orders_both": 922477,
+      "support_pct": 28.694,
+      "lift": 1.1011
+    },
+    {
+      "department_a": "dairy eggs",
+      "department_b": "frozen",
+      "orders_both": 911030,
+      "support_pct": 28.338,
+      "lift": 1.139
+    },
+    {
+      "department_a": "dairy eggs",
+      "department_b": "pantry",
+      "orders_both": 865642,
+      "support_pct": 26.9262,
+      "lift": 1.1433
+    },
+    {
+      "department_a": "beverages",
+      "department_b": "snacks",
+      "orders_both": 736539,
+      "support_pct": 22.9104,
+      "lift": 1.1677
+    }
+  ],
+  "department_top_pairs_by_lift": [
+    {
+      "department_a": "alcohol",
+      "department_b": "other",
+      "orders_both": 2863,
+      "support_pct": 0.0891,
+      "lift": 3.1002
+    },
+    {
+      "department_a": "alcohol",
+      "department_b": "pets",
+      "orders_both": 3941,
+      "support_pct": 0.1226,
+      "lift": 2.5236
+    },
+    {
+      "department_a": "household",
+      "department_b": "pets",
+      "orders_both": 21809,
+      "support_pct": 0.6784,
+      "lift": 2.5122
+    },
+    {
+      "department_a": "household",
+      "department_b": "personal care",
+      "orders_both": 105577,
+      "support_pct": 3.284,
+      "lift": 2.2632
+    },
+    {
+      "department_a": "personal care",
+      "department_b": "pets",
+      "orders_both": 13129,
+      "support_pct": 0.4084,
+      "lift": 2.2351
+    },
+    {
+      "department_a": "personal care",
+      "department_b": "other",
+      "orders_both": 7323,
+      "support_pct": 0.2278,
+      "lift": 2.1082
+    },
+    {
+      "department_a": "canned goods",
+      "department_b": "international",
+      "orders_both": 90221,
+      "support_pct": 2.8064,
+      "lift": 1.9217
+    },
+    {
+      "department_a": "missing",
+      "department_b": "other",
+      "orders_both": 1230,
+      "support_pct": 0.0383,
+      "lift": 1.8965
+    },
+    {
+      "department_a": "canned goods",
+      "department_b": "dry goods pasta",
+      "orders_both": 233646,
+      "support_pct": 7.2677,
+      "lift": 1.8441
+    },
+    {
+      "department_a": "dry goods pasta",
+      "department_b": "international",
+      "orders_both": 73878,
+      "support_pct": 2.298,
+      "lift": 1.7932
+    }
+  ],
+  "department_lift_range": [
+    0.1134,
+    3.1002
+  ],
+  "department_pairs_lift_gt_1": 185,
+  "product_pairs": {
+    "products": 300,
+    "pairs": 44850,
+    "pairs_min_support": 4677,
+    "min_support_pct": 0.05,
+    "spearman_support_lift_all": [
+      0.5607,
+      0.0
+    ],
+    "spearman_support_lift_min_support": [
+      0.0286,
+      0.050357625875179474
+    ],
+    "top_rank_pairs": 50,
+    "top_rank_lift_min": 0.9945,
+    "top_rank_lift_max": 5.699,
+    "top_rank_lift_gt_1": 49,
+    "top15_lift_min": 1.4434,
+    "top15_lift_max": 3.001,
+    "lift_gt_1_all": 36028
+  }
+}

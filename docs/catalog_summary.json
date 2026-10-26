@@ -1,0 +1,441 @@
+{
+  "source": "data/*.csv; order_products__prior.csv cho Task 15–16",
+  "records": {
+    "orders.csv": 3421083,
+    "order_products__prior.csv": 32434489,
+    "order_products__train.csv": 1384617,
+    "products.csv": 49688,
+    "aisles.csv": 134,
+    "departments.csv": 21
+  },
+  "entities": {
+    "Products": 49688,
+    "Aisles": 134,
+    "Departments": 21
+  },
+  "products_with_prior_lines": 49677,
+  "products_per_department": {
+    "bulk": 38,
+    "other": 548,
+    "meat seafood": 907,
+    "pets": 972,
+    "alcohol": 1054,
+    "babies": 1081,
+    "breakfast": 1115,
+    "international": 1139,
+    "missing": 1258,
+    "deli": 1322,
+    "bakery": 1516,
+    "produce": 1684,
+    "dry goods pasta": 1858,
+    "canned goods": 2092,
+    "household": 3085,
+    "dairy eggs": 3449,
+    "frozen": 4007,
+    "beverages": 4365,
+    "pantry": 5371,
+    "snacks": 6264,
+    "personal care": 6563
+  },
+  "department_popularity": [
+    {
+      "department": "produce",
+      "products": 1684,
+      "lines": 9479291,
+      "median": 329.0,
+      "q25": 56.0,
+      "q75": 2328.75,
+      "max": 472565,
+      "top10pct_share": 0.8123
+    },
+    {
+      "department": "dairy eggs",
+      "products": 3448,
+      "lines": 5414016,
+      "median": 206.0,
+      "q25": 44.0,
+      "q75": 932.25,
+      "max": 137905,
+      "top10pct_share": 0.7282
+    },
+    {
+      "department": "bulk",
+      "products": 38,
+      "lines": 34573,
+      "median": 188.0,
+      "q25": 70.75,
+      "q75": 776.0,
+      "max": 10150,
+      "top10pct_share": 0.6344
+    },
+    {
+      "department": "breakfast",
+      "products": 1114,
+      "lines": 709569,
+      "median": 136.5,
+      "q25": 34.0,
+      "q75": 560.0,
+      "max": 26741,
+      "top10pct_share": 0.6262
+    },
+    {
+      "department": "bakery",
+      "products": 1516,
+      "lines": 1176787,
+      "median": 132.5,
+      "q25": 35.0,
+      "q75": 583.25,
+      "max": 60816,
+      "top10pct_share": 0.6727
+    },
+    {
+      "department": "deli",
+      "products": 1322,
+      "lines": 1051249,
+      "median": 115.0,
+      "q25": 32.0,
+      "q75": 476.5,
+      "max": 71314,
+      "top10pct_share": 0.7311
+    },
+    {
+      "department": "frozen",
+      "products": 4007,
+      "lines": 2236432,
+      "median": 107.0,
+      "q25": 32.0,
+      "q75": 386.0,
+      "max": 55946,
+      "top10pct_share": 0.6856
+    },
+    {
+      "department": "meat seafood",
+      "products": 907,
+      "lines": 708931,
+      "median": 93.0,
+      "q25": 25.0,
+      "q75": 411.5,
+      "max": 50281,
+      "top10pct_share": 0.763
+    },
+    {
+      "department": "dry goods pasta",
+      "products": 1858,
+      "lines": 866627,
+      "median": 82.0,
+      "q25": 21.0,
+      "q75": 293.0,
+      "max": 19998,
+      "top10pct_share": 0.7038
+    },
+    {
+      "department": "beverages",
+      "products": 4363,
+      "lines": 2690129,
+      "median": 78.0,
+      "q25": 21.0,
+      "q75": 330.0,
+      "max": 75886,
+      "top10pct_share": 0.7521
+    },
+    {
+      "department": "canned goods",
+      "products": 2092,
+      "lines": 1068058,
+      "median": 78.0,
+      "q25": 20.0,
+      "q75": 288.5,
+      "max": 38001,
+      "top10pct_share": 0.7408
+    },
+    {
+      "department": "snacks",
+      "products": 6263,
+      "lines": 2887550,
+      "median": 75.0,
+      "q25": 22.0,
+      "q75": 303.0,
+      "max": 24950,
+      "top10pct_share": 0.6981
+    },
+    {
+      "department": "babies",
+      "products": 1081,
+      "lines": 423802,
+      "median": 75.0,
+      "q25": 20.0,
+      "q75": 282.0,
+      "max": 8793,
+      "top10pct_share": 0.6537
+    },
+    {
+      "department": "pantry",
+      "products": 5370,
+      "lines": 1875577,
+      "median": 50.0,
+      "q25": 15.0,
+      "q75": 208.0,
+      "max": 50255,
+      "top10pct_share": 0.7286
+    },
+    {
+      "department": "international",
+      "products": 1139,
+      "lines": 269253,
+      "median": 50.0,
+      "q25": 15.0,
+      "q75": 168.5,
+      "max": 10345,
+      "top10pct_share": 0.6646
+    },
+    {
+      "department": "pets",
+      "products": 972,
+      "lines": 97724,
+      "median": 42.0,
+      "q25": 16.0,
+      "q75": 118.25,
+      "max": 1825,
+      "top10pct_share": 0.4857
+    },
+    {
+      "department": "household",
+      "products": 3083,
+      "lines": 738666,
+      "median": 41.0,
+      "q25": 13.0,
+      "q75": 165.0,
+      "max": 27864,
+      "top10pct_share": 0.6964
+    },
+    {
+      "department": "alcohol",
+      "products": 1054,
+      "lines": 153696,
+      "median": 28.0,
+      "q25": 11.0,
+      "q75": 85.0,
+      "max": 8246,
+      "top10pct_share": 0.7143
+    },
+    {
+      "department": "other",
+      "products": 548,
+      "lines": 36291,
+      "median": 23.0,
+      "q25": 9.0,
+      "q75": 53.25,
+      "max": 3976,
+      "top10pct_share": 0.5888
+    },
+    {
+      "department": "personal care",
+      "products": 6563,
+      "lines": 447123,
+      "median": 22.0,
+      "q25": 9.0,
+      "q75": 57.0,
+      "max": 5941,
+      "top10pct_share": 0.5939
+    },
+    {
+      "department": "missing",
+      "products": 1255,
+      "lines": 69145,
+      "median": 12.0,
+      "q25": 6.0,
+      "q75": 28.0,
+      "max": 8366,
+      "top10pct_share": 0.7323
+    }
+  ],
+  "first_in_cart": {
+    "lines": 32434489,
+    "first_position_lines": 3214874,
+    "min_lines_for_rate": 5000,
+    "top_by_count": [
+      {
+        "product": "Banana",
+        "first": 110916,
+        "lines": 472565,
+        "first_rate_pct": 23.4711
+      },
+      {
+        "product": "Bag of Organic Bananas",
+        "first": 78988,
+        "lines": 379450,
+        "first_rate_pct": 20.8164
+      },
+      {
+        "product": "Organic Whole Milk",
+        "first": 30927,
+        "lines": 137905,
+        "first_rate_pct": 22.4263
+      },
+      {
+        "product": "Organic Strawberries",
+        "first": 27975,
+        "lines": 264683,
+        "first_rate_pct": 10.5692
+      },
+      {
+        "product": "Organic Hass Avocado",
+        "first": 24116,
+        "lines": 213584,
+        "first_rate_pct": 11.2911
+      },
+      {
+        "product": "Organic Baby Spinach",
+        "first": 23543,
+        "lines": 241921,
+        "first_rate_pct": 9.7317
+      },
+      {
+        "product": "Organic Avocado",
+        "first": 22398,
+        "lines": 176815,
+        "first_rate_pct": 12.6675
+      },
+      {
+        "product": "Spring Water",
+        "first": 16822,
+        "lines": 56087,
+        "first_rate_pct": 29.9927
+      },
+      {
+        "product": "Strawberries",
+        "first": 16366,
+        "lines": 142951,
+        "first_rate_pct": 11.4487
+      },
+      {
+        "product": "Organic Raspberries",
+        "first": 14393,
+        "lines": 137057,
+        "first_rate_pct": 10.5015
+      },
+      {
+        "product": "Sparkling Water Grapefruit",
+        "first": 13733,
+        "lines": 75886,
+        "first_rate_pct": 18.0969
+      },
+      {
+        "product": "Organic Half & Half",
+        "first": 12676,
+        "lines": 76360,
+        "first_rate_pct": 16.6003
+      },
+      {
+        "product": "Large Lemon",
+        "first": 12316,
+        "lines": 152657,
+        "first_rate_pct": 8.0678
+      },
+      {
+        "product": "Soda",
+        "first": 11770,
+        "lines": 35791,
+        "first_rate_pct": 32.8854
+      },
+      {
+        "product": "Organic Reduced Fat Milk",
+        "first": 9885,
+        "lines": 35663,
+        "first_rate_pct": 27.7178
+      }
+    ],
+    "top_by_rate": [
+      {
+        "product": "Organic Low Fat Milk",
+        "first": 3418,
+        "lines": 8438,
+        "first_rate_pct": 40.5072
+      },
+      {
+        "product": "Drinking Water",
+        "first": 2176,
+        "lines": 5403,
+        "first_rate_pct": 40.2739
+      },
+      {
+        "product": "Vodka",
+        "first": 1945,
+        "lines": 5475,
+        "first_rate_pct": 35.5251
+      },
+      {
+        "product": "Mineral Water",
+        "first": 2103,
+        "lines": 5936,
+        "first_rate_pct": 35.4279
+      },
+      {
+        "product": "Smartwater",
+        "first": 3983,
+        "lines": 11504,
+        "first_rate_pct": 34.6227
+      },
+      {
+        "product": "Soda",
+        "first": 11770,
+        "lines": 35791,
+        "first_rate_pct": 32.8854
+      },
+      {
+        "product": "Sparkling Mineral Water",
+        "first": 5828,
+        "lines": 18161,
+        "first_rate_pct": 32.0907
+      },
+      {
+        "product": "Organic  Whole Milk",
+        "first": 3080,
+        "lines": 9842,
+        "first_rate_pct": 31.2945
+      },
+      {
+        "product": "Sparkling Water",
+        "first": 3841,
+        "lines": 12321,
+        "first_rate_pct": 31.1744
+      },
+      {
+        "product": "0% Greek Strained Yogurt",
+        "first": 4064,
+        "lines": 13238,
+        "first_rate_pct": 30.6995
+      },
+      {
+        "product": "Extra Fancy Unsalted Mixed Nuts",
+        "first": 2961,
+        "lines": 9709,
+        "first_rate_pct": 30.4975
+      },
+      {
+        "product": "Zero Calorie Cola",
+        "first": 2592,
+        "lines": 8558,
+        "first_rate_pct": 30.2875
+      },
+      {
+        "product": "Spring Water",
+        "first": 16822,
+        "lines": 56087,
+        "first_rate_pct": 29.9927
+      },
+      {
+        "product": "Reduced Fat 2% Milk",
+        "first": 5180,
+        "lines": 17320,
+        "first_rate_pct": 29.9076
+      },
+      {
+        "product": "Sweet Kale Salad Mix",
+        "first": 3339,
+        "lines": 11362,
+        "first_rate_pct": 29.3874
+      }
+    ]
+  }
+}

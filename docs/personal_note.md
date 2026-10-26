@@ -1,0 +1,2 @@
+- các ngày từ 0->6 không có ý nghĩa là từ CN->T7, vì trong datacard bài toán gốc không có xác nhận điều này 
+- hệ số tương quan thuận 

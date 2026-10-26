@@ -1,0 +1,624 @@
+{
+  "definition": {
+    "sample": "khách có đơn train; cặp (khách, sản phẩm) đã mua trong prior",
+    "frequency": "số đơn prior chứa sản phẩm",
+    "recency": "số đơn giữa lần mua cuối trong prior và đơn train",
+    "repurchase": "sản phẩm có mặt trong đơn train (đơn ngay sau prior)"
+  },
+  "sample": {
+    "train_users": 131209,
+    "pairs": 8474661,
+    "prior_purchases": 20641991,
+    "repurchased_items": 828824,
+    "train_items": 1384617,
+    "repurchase_share_of_train_items_pct": 59.8594,
+    "repurchases_per_order": 6.3168,
+    "overall_repurchase_rate_pct": 9.78
+  },
+  "frequency": {
+    "median": 1.0,
+    "q25": 1.0,
+    "q75": 2.0,
+    "share_ge2_pct": 40.0151,
+    "share_ge5_pct": 11.3578,
+    "histogram": [
+      {
+        "purchases": "1",
+        "pairs": 5083521,
+        "share_pct": 59.9849
+      },
+      {
+        "purchases": "2",
+        "pairs": 1402888,
+        "share_pct": 16.5539
+      },
+      {
+        "purchases": "3",
+        "pairs": 656064,
+        "share_pct": 7.7415
+      },
+      {
+        "purchases": "4",
+        "pairs": 369656,
+        "share_pct": 4.3619
+      },
+      {
+        "purchases": "5",
+        "pairs": 233073,
+        "share_pct": 2.7502
+      },
+      {
+        "purchases": "6",
+        "pairs": 158214,
+        "share_pct": 1.8669
+      },
+      {
+        "purchases": "7",
+        "pairs": 113233,
+        "share_pct": 1.3361
+      },
+      {
+        "purchases": "8",
+        "pairs": 84374,
+        "share_pct": 0.9956
+      },
+      {
+        "purchases": "9",
+        "pairs": 64174,
+        "share_pct": 0.7572
+      },
+      {
+        "purchases": "10+",
+        "pairs": 309464,
+        "share_pct": 3.6516
+      }
+    ],
+    "by_bucket": [
+      {
+        "bucket": "1",
+        "n": 5083521,
+        "positives": 239222,
+        "rate_pct": 4.7058
+      },
+      {
+        "bucket": "2",
+        "n": 1402888,
+        "positives": 147216,
+        "rate_pct": 10.4938
+      },
+      {
+        "bucket": "3",
+        "n": 656064,
+        "positives": 102020,
+        "rate_pct": 15.5503
+      },
+      {
+        "bucket": "4",
+        "n": 369656,
+        "positives": 69113,
+        "rate_pct": 18.6966
+      },
+      {
+        "bucket": "5–9",
+        "n": 653068,
+        "positives": 156036,
+        "rate_pct": 23.8928
+      },
+      {
+        "bucket": "10–19",
+        "n": 237596,
+        "positives": 80408,
+        "rate_pct": 33.8423
+      },
+      {
+        "bucket": "20+",
+        "n": 71868,
+        "positives": 34809,
+        "rate_pct": 48.4346
+      }
+    ]
+  },
+  "recency": {
+    "median_orders": 4.0,
+    "mean_orders": 9.521,
+    "q25_orders": 1.0,
+    "q75_orders": 12.0,
+    "share_zero_pct": 16.0359,
+    "histogram": [
+      {
+        "orders_since_last": "0",
+        "pairs": 1358988,
+        "share_pct": 16.0359
+      },
+      {
+        "orders_since_last": "1",
+        "pairs": 968287,
+        "share_pct": 11.4257
+      },
+      {
+        "orders_since_last": "2",
+        "pairs": 804176,
+        "share_pct": 9.4892
+      },
+      {
+        "orders_since_last": "3",
+        "pairs": 629405,
+        "share_pct": 7.4269
+      },
+      {
+        "orders_since_last": "4",
+        "pairs": 510435,
+        "share_pct": 6.0231
+      },
+      {
+        "orders_since_last": "5",
+        "pairs": 425115,
+        "share_pct": 5.0163
+      },
+      {
+        "orders_since_last": "6",
+        "pairs": 359080,
+        "share_pct": 4.2371
+      },
+      {
+        "orders_since_last": "7",
+        "pairs": 309308,
+        "share_pct": 3.6498
+      },
+      {
+        "orders_since_last": "8",
+        "pairs": 268156,
+        "share_pct": 3.1642
+      },
+      {
+        "orders_since_last": "9",
+        "pairs": 235491,
+        "share_pct": 2.7788
+      },
+      {
+        "orders_since_last": "10+",
+        "pairs": 2606220,
+        "share_pct": 30.7531
+      }
+    ],
+    "by_bucket": [
+      {
+        "bucket": "0",
+        "n": 1358988,
+        "positives": 379382,
+        "rate_pct": 27.9165
+      },
+      {
+        "bucket": "1",
+        "n": 968287,
+        "positives": 156909,
+        "rate_pct": 16.2048
+      },
+      {
+        "bucket": "2",
+        "n": 804176,
+        "positives": 89003,
+        "rate_pct": 11.0676
+      },
+      {
+        "bucket": "3–4",
+        "n": 1139840,
+        "positives": 86428,
+        "rate_pct": 7.5825
+      },
+      {
+        "bucket": "5–9",
+        "n": 1597150,
+        "positives": 71713,
+        "rate_pct": 4.4901
+      },
+      {
+        "bucket": "10–19",
+        "n": 1359405,
+        "positives": 32281,
+        "rate_pct": 2.3746
+      },
+      {
+        "bucket": "20+",
+        "n": 1246815,
+        "positives": 13108,
+        "rate_pct": 1.0513
+      }
+    ],
+    "by_frequency_group": [
+      {
+        "prior_purchases": "1",
+        "pairs": 5083521,
+        "by_recency": [
+          {
+            "bucket": "0",
+            "n": 561873,
+            "positives": 76017,
+            "rate_pct": 13.5292
+          },
+          {
+            "bucket": "1",
+            "n": 503242,
+            "positives": 42651,
+            "rate_pct": 8.4752
+          },
+          {
+            "bucket": "2",
+            "n": 488486,
+            "positives": 32940,
+            "rate_pct": 6.7433
+          },
+          {
+            "bucket": "3–4",
+            "n": 718185,
+            "positives": 34463,
+            "rate_pct": 4.7986
+          },
+          {
+            "bucket": "5–9",
+            "n": 1042141,
+            "positives": 31129,
+            "rate_pct": 2.987
+          },
+          {
+            "bucket": "10–19",
+            "n": 909710,
+            "positives": 15160,
+            "rate_pct": 1.6665
+          },
+          {
+            "bucket": "20+",
+            "n": 859884,
+            "positives": 6862,
+            "rate_pct": 0.798
+          }
+        ]
+      },
+      {
+        "prior_purchases": "2–4",
+        "pairs": 2428608,
+        "by_recency": [
+          {
+            "bucket": "0",
+            "n": 484868,
+            "positives": 149688,
+            "rate_pct": 30.8719
+          },
+          {
+            "bucket": "1",
+            "n": 315468,
+            "positives": 62498,
+            "rate_pct": 19.8112
+          },
+          {
+            "bucket": "2",
+            "n": 224627,
+            "positives": 32221,
+            "rate_pct": 14.3442
+          },
+          {
+            "bucket": "3–4",
+            "n": 311161,
+            "positives": 31306,
+            "rate_pct": 10.061
+          },
+          {
+            "bucket": "5–9",
+            "n": 424936,
+            "positives": 26283,
+            "rate_pct": 6.1852
+          },
+          {
+            "bucket": "10–19",
+            "n": 353839,
+            "positives": 11797,
+            "rate_pct": 3.334
+          },
+          {
+            "bucket": "20+",
+            "n": 313709,
+            "positives": 4556,
+            "rate_pct": 1.4523
+          }
+        ]
+      },
+      {
+        "prior_purchases": "5+",
+        "pairs": 962532,
+        "by_recency": [
+          {
+            "bucket": "0",
+            "n": 312247,
+            "positives": 153677,
+            "rate_pct": 49.2165
+          },
+          {
+            "bucket": "1",
+            "n": 149577,
+            "positives": 51760,
+            "rate_pct": 34.6043
+          },
+          {
+            "bucket": "2",
+            "n": 91063,
+            "positives": 23842,
+            "rate_pct": 26.1819
+          },
+          {
+            "bucket": "3–4",
+            "n": 110494,
+            "positives": 20659,
+            "rate_pct": 18.6969
+          },
+          {
+            "bucket": "5–9",
+            "n": 130073,
+            "positives": 14301,
+            "rate_pct": 10.9946
+          },
+          {
+            "bucket": "10–19",
+            "n": 95856,
+            "positives": 5324,
+            "rate_pct": 5.5542
+          },
+          {
+            "bucket": "20+",
+            "n": 73222,
+            "positives": 1690,
+            "rate_pct": 2.308
+          }
+        ]
+      }
+    ]
+  },
+  "by_frequency": [
+    {
+      "bucket": "1",
+      "n": 5083521,
+      "positives": 239222,
+      "rate_pct": 4.7058
+    },
+    {
+      "bucket": "2",
+      "n": 1402888,
+      "positives": 147216,
+      "rate_pct": 10.4938
+    },
+    {
+      "bucket": "3",
+      "n": 656064,
+      "positives": 102020,
+      "rate_pct": 15.5503
+    },
+    {
+      "bucket": "4",
+      "n": 369656,
+      "positives": 69113,
+      "rate_pct": 18.6966
+    },
+    {
+      "bucket": "5–9",
+      "n": 653068,
+      "positives": 156036,
+      "rate_pct": 23.8928
+    },
+    {
+      "bucket": "10–19",
+      "n": 237596,
+      "positives": 80408,
+      "rate_pct": 33.8423
+    },
+    {
+      "bucket": "20+",
+      "n": 71868,
+      "positives": 34809,
+      "rate_pct": 48.4346
+    }
+  ],
+  "by_recency": [
+    {
+      "bucket": "0",
+      "n": 1358988,
+      "positives": 379382,
+      "rate_pct": 27.9165
+    },
+    {
+      "bucket": "1",
+      "n": 968287,
+      "positives": 156909,
+      "rate_pct": 16.2048
+    },
+    {
+      "bucket": "2",
+      "n": 804176,
+      "positives": 89003,
+      "rate_pct": 11.0676
+    },
+    {
+      "bucket": "3–4",
+      "n": 1139840,
+      "positives": 86428,
+      "rate_pct": 7.5825
+    },
+    {
+      "bucket": "5–9",
+      "n": 1597150,
+      "positives": 71713,
+      "rate_pct": 4.4901
+    },
+    {
+      "bucket": "10–19",
+      "n": 1359405,
+      "positives": 32281,
+      "rate_pct": 2.3746
+    },
+    {
+      "bucket": "20+",
+      "n": 1246815,
+      "positives": 13108,
+      "rate_pct": 1.0513
+    }
+  ],
+  "top_products_by_volume": [
+    {
+      "product": "Banana",
+      "buyers": 46964,
+      "next_order_rate_pct": 35.2547
+    },
+    {
+      "product": "Bag of Organic Bananas",
+      "buyers": 40493,
+      "next_order_rate_pct": 32.9983
+    },
+    {
+      "product": "Organic Strawberries",
+      "buyers": 37468,
+      "next_order_rate_pct": 22.9609
+    },
+    {
+      "product": "Organic Baby Spinach",
+      "buyers": 35097,
+      "next_order_rate_pct": 22.9507
+    },
+    {
+      "product": "Large Lemon",
+      "buyers": 29510,
+      "next_order_rate_pct": 20.0712
+    },
+    {
+      "product": "Limes",
+      "buyers": 28622,
+      "next_order_rate_pct": 14.7928
+    },
+    {
+      "product": "Organic Hass Avocado",
+      "buyers": 27756,
+      "next_order_rate_pct": 21.7683
+    },
+    {
+      "product": "Strawberries",
+      "buyers": 27472,
+      "next_order_rate_pct": 17.4214
+    },
+    {
+      "product": "Organic Avocado",
+      "buyers": 27285,
+      "next_order_rate_pct": 22.8184
+    },
+    {
+      "product": "Organic Blueberries",
+      "buyers": 23724,
+      "next_order_rate_pct": 14.264
+    },
+    {
+      "product": "Organic Garlic",
+      "buyers": 22384,
+      "next_order_rate_pct": 13.5856
+    },
+    {
+      "product": "Organic Yellow Onion",
+      "buyers": 21843,
+      "next_order_rate_pct": 14.1647
+    },
+    {
+      "product": "Organic Zucchini",
+      "buyers": 20833,
+      "next_order_rate_pct": 15.6771
+    },
+    {
+      "product": "Organic Raspberries",
+      "buyers": 20195,
+      "next_order_rate_pct": 21.1884
+    },
+    {
+      "product": "Cucumber Kirby",
+      "buyers": 19202,
+      "next_order_rate_pct": 8.9001
+    }
+  ],
+  "top_products_by_next_rate": [
+    {
+      "product": "Bananas",
+      "buyers": 753,
+      "next_order_rate_pct": 40.1062
+    },
+    {
+      "product": "Organic Low Fat Milk",
+      "buyers": 924,
+      "next_order_rate_pct": 36.3636
+    },
+    {
+      "product": "Banana",
+      "buyers": 46964,
+      "next_order_rate_pct": 35.2547
+    },
+    {
+      "product": "Bag of Organic Bananas",
+      "buyers": 40493,
+      "next_order_rate_pct": 32.9983
+    },
+    {
+      "product": "Whole Organic Omega 3 Milk",
+      "buyers": 817,
+      "next_order_rate_pct": 31.3341
+    },
+    {
+      "product": "Organic Reduced Fat Milk",
+      "buyers": 3386,
+      "next_order_rate_pct": 31.1872
+    },
+    {
+      "product": "Organic Lactose Free Whole Milk",
+      "buyers": 754,
+      "next_order_rate_pct": 30.3714
+    },
+    {
+      "product": "Organic Lowfat 1% Milk",
+      "buyers": 1504,
+      "next_order_rate_pct": 28.3245
+    },
+    {
+      "product": "Organic Banana",
+      "buyers": 4710,
+      "next_order_rate_pct": 28.2166
+    },
+    {
+      "product": "Organic Whole Milk with DHA Omega-3",
+      "buyers": 1558,
+      "next_order_rate_pct": 28.1772
+    },
+    {
+      "product": "Organic Whole Milk",
+      "buyers": 14815,
+      "next_order_rate_pct": 28.1741
+    },
+    {
+      "product": "Zero Calorie Cola",
+      "buyers": 1025,
+      "next_order_rate_pct": 27.8049
+    },
+    {
+      "product": "Blueberry Whole Milk Yogurt Pouch",
+      "buyers": 695,
+      "next_order_rate_pct": 27.6259
+    },
+    {
+      "product": "Lactose Free 2% Reduced Fat Milk",
+      "buyers": 868,
+      "next_order_rate_pct": 27.5346
+    },
+    {
+      "product": "Milk Chocolate Almonds",
+      "buyers": 757,
+      "next_order_rate_pct": 27.4769
+    }
+  ],
+  "source": {
+    "orders_prior": "data/orders_prior.csv",
+    "orders_train": "data/orders_train.csv",
+    "items_prior": "data/order_products__prior.csv",
+    "items_train": "data/order_products__train.csv",
+    "products": "data/products.csv"
+  }
+}

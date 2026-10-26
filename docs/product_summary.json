@@ -1,0 +1,684 @@
+{
+  "source": {
+    "items": "data/order_products__prior.csv",
+    "orders": "data/orders_prior.csv",
+    "products": "data/products.csv",
+    "aisles": "data/aisles.csv",
+    "departments": "data/departments.csv"
+  },
+  "definition": {
+    "purchase_count": "số dòng order-product (mỗi đơn tối đa một dòng/sản phẩm)",
+    "reorder_rate": "reordered=1 / số dòng thuộc đơn có order_number >= 2",
+    "reorder_group": "tổng reordered / tổng dòng eligible (line-weighted)"
+  },
+  "top_products": [
+    {
+      "product": "Banana",
+      "aisle": "fresh fruits",
+      "department": "produce",
+      "lines": 472565,
+      "share_pct": 1.457,
+      "reorder_rate": 0.8997
+    },
+    {
+      "product": "Bag of Organic Bananas",
+      "aisle": "fresh fruits",
+      "department": "produce",
+      "lines": 379450,
+      "share_pct": 1.1699,
+      "reorder_rate": 0.8768
+    },
+    {
+      "product": "Organic Strawberries",
+      "aisle": "fresh fruits",
+      "department": "produce",
+      "lines": 264683,
+      "share_pct": 0.8161,
+      "reorder_rate": 0.8293
+    },
+    {
+      "product": "Organic Baby Spinach",
+      "aisle": "packaged vegetables fruits",
+      "department": "produce",
+      "lines": 241921,
+      "share_pct": 0.7459,
+      "reorder_rate": 0.8234
+    },
+    {
+      "product": "Organic Hass Avocado",
+      "aisle": "fresh fruits",
+      "department": "produce",
+      "lines": 213584,
+      "share_pct": 0.6585,
+      "reorder_rate": 0.8402
+    },
+    {
+      "product": "Organic Avocado",
+      "aisle": "fresh fruits",
+      "department": "produce",
+      "lines": 176815,
+      "share_pct": 0.5451,
+      "reorder_rate": 0.8293
+    },
+    {
+      "product": "Large Lemon",
+      "aisle": "fresh fruits",
+      "department": "produce",
+      "lines": 152657,
+      "share_pct": 0.4707,
+      "reorder_rate": 0.7364
+    },
+    {
+      "product": "Strawberries",
+      "aisle": "fresh fruits",
+      "department": "produce",
+      "lines": 142951,
+      "share_pct": 0.4407,
+      "reorder_rate": 0.7432
+    },
+    {
+      "product": "Limes",
+      "aisle": "fresh fruits",
+      "department": "produce",
+      "lines": 140627,
+      "share_pct": 0.4336,
+      "reorder_rate": 0.7254
+    },
+    {
+      "product": "Organic Whole Milk",
+      "aisle": "milk",
+      "department": "dairy eggs",
+      "lines": 137905,
+      "share_pct": 0.4252,
+      "reorder_rate": 0.8762
+    },
+    {
+      "product": "Organic Raspberries",
+      "aisle": "packaged vegetables fruits",
+      "department": "produce",
+      "lines": 137057,
+      "share_pct": 0.4226,
+      "reorder_rate": 0.8066
+    },
+    {
+      "product": "Organic Yellow Onion",
+      "aisle": "fresh vegetables",
+      "department": "produce",
+      "lines": 113426,
+      "share_pct": 0.3497,
+      "reorder_rate": 0.7349
+    },
+    {
+      "product": "Organic Garlic",
+      "aisle": "fresh vegetables",
+      "department": "produce",
+      "lines": 109778,
+      "share_pct": 0.3385,
+      "reorder_rate": 0.7237
+    },
+    {
+      "product": "Organic Zucchini",
+      "aisle": "fresh vegetables",
+      "department": "produce",
+      "lines": 104823,
+      "share_pct": 0.3232,
+      "reorder_rate": 0.7211
+    },
+    {
+      "product": "Organic Blueberries",
+      "aisle": "packaged vegetables fruits",
+      "department": "produce",
+      "lines": 100060,
+      "share_pct": 0.3085,
+      "reorder_rate": 0.6769
+    }
+  ],
+  "top_departments": [
+    {
+      "department": "produce",
+      "lines": 9479291,
+      "share_pct": 29.226,
+      "reorder_rate": 0.6926
+    },
+    {
+      "department": "dairy eggs",
+      "lines": 5414016,
+      "share_pct": 16.6922,
+      "reorder_rate": 0.7139
+    },
+    {
+      "department": "snacks",
+      "lines": 2887550,
+      "share_pct": 8.9027,
+      "reorder_rate": 0.6126
+    },
+    {
+      "department": "beverages",
+      "lines": 2690129,
+      "share_pct": 8.294,
+      "reorder_rate": 0.6969
+    },
+    {
+      "department": "frozen",
+      "lines": 2236432,
+      "share_pct": 6.8952,
+      "reorder_rate": 0.5832
+    },
+    {
+      "department": "pantry",
+      "lines": 1875577,
+      "share_pct": 5.7827,
+      "reorder_rate": 0.3722
+    },
+    {
+      "department": "bakery",
+      "lines": 1176787,
+      "share_pct": 3.6282,
+      "reorder_rate": 0.6712
+    },
+    {
+      "department": "canned goods",
+      "lines": 1068058,
+      "share_pct": 3.293,
+      "reorder_rate": 0.4913
+    },
+    {
+      "department": "deli",
+      "lines": 1051249,
+      "share_pct": 3.2411,
+      "reorder_rate": 0.6511
+    },
+    {
+      "department": "dry goods pasta",
+      "lines": 866627,
+      "share_pct": 2.6719,
+      "reorder_rate": 0.496
+    }
+  ],
+  "top_aisles": [
+    {
+      "aisle": "fresh fruits",
+      "lines": 3642188,
+      "share_pct": 11.2294,
+      "reorder_rate": 0.7634
+    },
+    {
+      "aisle": "fresh vegetables",
+      "lines": 3418021,
+      "share_pct": 10.5382,
+      "reorder_rate": 0.6346
+    },
+    {
+      "aisle": "packaged vegetables fruits",
+      "lines": 1765313,
+      "share_pct": 5.4427,
+      "reorder_rate": 0.6811
+    },
+    {
+      "aisle": "yogurt",
+      "lines": 1452343,
+      "share_pct": 4.4778,
+      "reorder_rate": 0.732
+    },
+    {
+      "aisle": "packaged cheese",
+      "lines": 979763,
+      "share_pct": 3.0207,
+      "reorder_rate": 0.6257
+    },
+    {
+      "aisle": "milk",
+      "lines": 891015,
+      "share_pct": 2.7471,
+      "reorder_rate": 0.8282
+    },
+    {
+      "aisle": "water seltzer sparkling water",
+      "lines": 841533,
+      "share_pct": 2.5946,
+      "reorder_rate": 0.7751
+    },
+    {
+      "aisle": "chips pretzels",
+      "lines": 722470,
+      "share_pct": 2.2275,
+      "reorder_rate": 0.6298
+    },
+    {
+      "aisle": "soy lactosefree",
+      "lines": 638253,
+      "share_pct": 1.9678,
+      "reorder_rate": 0.7377
+    },
+    {
+      "aisle": "bread",
+      "lines": 584834,
+      "share_pct": 1.8031,
+      "reorder_rate": 0.7155
+    },
+    {
+      "aisle": "refrigerated",
+      "lines": 575881,
+      "share_pct": 1.7755,
+      "reorder_rate": 0.7076
+    },
+    {
+      "aisle": "frozen produce",
+      "lines": 522654,
+      "share_pct": 1.6114,
+      "reorder_rate": 0.5817
+    },
+    {
+      "aisle": "ice cream ice",
+      "lines": 498425,
+      "share_pct": 1.5367,
+      "reorder_rate": 0.5291
+    },
+    {
+      "aisle": "crackers",
+      "lines": 458838,
+      "share_pct": 1.4147,
+      "reorder_rate": 0.6086
+    },
+    {
+      "aisle": "energy granola bars",
+      "lines": 456386,
+      "share_pct": 1.4071,
+      "reorder_rate": 0.6366
+    }
+  ],
+  "long_tail": {
+    "products_with_purchases": 49677,
+    "gini": 0.8738,
+    "products_for_80pct": 4538,
+    "products_for_80pct_share_pct": 9.135,
+    "top_1_pct_share_pct": 42.7991,
+    "top_5_pct_share_pct": 69.845,
+    "top_10_pct_share_pct": 81.4339,
+    "top_20_pct_share_pct": 90.9732
+  },
+  "diversity": {
+    "users": 206209,
+    "orders_per_user_median": 9.0,
+    "distinct_mean": 64.5362,
+    "distinct_median": 48.0,
+    "distinct_q25": 25.0,
+    "distinct_q75": 86.0,
+    "distinct_min": 1,
+    "distinct_max": 726,
+    "distinct_per_order_median": 4.7692,
+    "by_order_group": [
+      {
+        "orders": "4–10",
+        "users": 104513,
+        "median_distinct": 30.0,
+        "median_per_order": 6.0
+      },
+      {
+        "orders": "11–25",
+        "users": 63671,
+        "median_distinct": 67.0,
+        "median_per_order": 4.5385
+      },
+      {
+        "orders": "26–50",
+        "users": 27115,
+        "median_distinct": 112.0,
+        "median_per_order": 3.3462
+      },
+      {
+        "orders": "51–100",
+        "users": 10910,
+        "median_distinct": 162.0,
+        "median_per_order": 2.4086
+      }
+    ]
+  },
+  "reorder": {
+    "lines_all": 32434489,
+    "lines_eligible": 30356421,
+    "first_order_lines": 2078068,
+    "overall_reorder_rate_all": 0.5897,
+    "overall_reorder_rate_eligible": 0.6301,
+    "first_order_reordered_lines": 0,
+    "products_with_100_lines": 19389,
+    "product_rate_median": 0.5385,
+    "product_rate_q25": 0.4128,
+    "product_rate_q75": 0.6407,
+    "product_rate_min": 0.0053,
+    "product_rate_max": 0.9143,
+    "top_products_by_rate": [
+      {
+        "product": "Organic Reduced Fat Milk",
+        "lines": 35663,
+        "eligible_lines": 33709,
+        "reorder_rate": 0.9
+      },
+      {
+        "product": "Banana",
+        "lines": 472565,
+        "eligible_lines": 443031,
+        "reorder_rate": 0.8997
+      },
+      {
+        "product": "Organic Low Fat Milk",
+        "lines": 8438,
+        "eligible_lines": 7828,
+        "reorder_rate": 0.8993
+      },
+      {
+        "product": "Organic Lactose Free Whole Milk",
+        "lines": 8477,
+        "eligible_lines": 8125,
+        "reorder_rate": 0.8962
+      },
+      {
+        "product": "Whole Organic Omega 3 Milk",
+        "lines": 9108,
+        "eligible_lines": 8744,
+        "reorder_rate": 0.896
+      },
+      {
+        "product": "Milk, Organic, Vitamin D",
+        "lines": 20198,
+        "eligible_lines": 19316,
+        "reorder_rate": 0.8934
+      },
+      {
+        "product": "Organic Lowfat 1% Milk",
+        "lines": 14869,
+        "eligible_lines": 14085,
+        "reorder_rate": 0.8866
+      },
+      {
+        "product": "Organic  Whole Milk",
+        "lines": 9842,
+        "eligible_lines": 9400,
+        "reorder_rate": 0.8807
+      },
+      {
+        "product": "Organic Fat Free Milk",
+        "lines": 26591,
+        "eligible_lines": 25131,
+        "reorder_rate": 0.8801
+      },
+      {
+        "product": "Organic Milk Reduced Fat, 2% Milkfat",
+        "lines": 12737,
+        "eligible_lines": 12144,
+        "reorder_rate": 0.8784
+      },
+      {
+        "product": "Bag of Organic Bananas",
+        "lines": 379450,
+        "eligible_lines": 360292,
+        "reorder_rate": 0.8768
+      },
+      {
+        "product": "Organic Whole Milk",
+        "lines": 137905,
+        "eligible_lines": 130682,
+        "reorder_rate": 0.8762
+      },
+      {
+        "product": "0% Greek Strained Yogurt",
+        "lines": 13238,
+        "eligible_lines": 12574,
+        "reorder_rate": 0.8715
+      },
+      {
+        "product": "Fat Free Skim Milk",
+        "lines": 9130,
+        "eligible_lines": 8543,
+        "reorder_rate": 0.8702
+      },
+      {
+        "product": "Extra Fancy Unsalted Mixed Nuts",
+        "lines": 9709,
+        "eligible_lines": 9154,
+        "reorder_rate": 0.8673
+      }
+    ],
+    "departments": [
+      {
+        "department": "produce",
+        "lines": 9479291,
+        "eligible_lines": 8894907,
+        "share_pct": 29.226,
+        "reorder_rate": 0.6926
+      },
+      {
+        "department": "dairy eggs",
+        "lines": 5414016,
+        "eligible_lines": 5080986,
+        "share_pct": 16.6922,
+        "reorder_rate": 0.7139
+      },
+      {
+        "department": "snacks",
+        "lines": 2887550,
+        "eligible_lines": 2706641,
+        "share_pct": 8.9027,
+        "reorder_rate": 0.6126
+      },
+      {
+        "department": "beverages",
+        "lines": 2690129,
+        "eligible_lines": 2522511,
+        "share_pct": 8.294,
+        "reorder_rate": 0.6969
+      },
+      {
+        "department": "frozen",
+        "lines": 2236432,
+        "eligible_lines": 2078109,
+        "share_pct": 6.8952,
+        "reorder_rate": 0.5832
+      },
+      {
+        "department": "pantry",
+        "lines": 1875577,
+        "eligible_lines": 1747309,
+        "share_pct": 5.7827,
+        "reorder_rate": 0.3722
+      },
+      {
+        "department": "bakery",
+        "lines": 1176787,
+        "eligible_lines": 1101246,
+        "share_pct": 3.6282,
+        "reorder_rate": 0.6712
+      },
+      {
+        "department": "canned goods",
+        "lines": 1068058,
+        "eligible_lines": 994292,
+        "share_pct": 3.293,
+        "reorder_rate": 0.4913
+      },
+      {
+        "department": "deli",
+        "lines": 1051249,
+        "eligible_lines": 981150,
+        "share_pct": 3.2411,
+        "reorder_rate": 0.6511
+      },
+      {
+        "department": "dry goods pasta",
+        "lines": 866627,
+        "eligible_lines": 805645,
+        "share_pct": 2.6719,
+        "reorder_rate": 0.496
+      },
+      {
+        "department": "household",
+        "lines": 738666,
+        "eligible_lines": 686604,
+        "share_pct": 2.2774,
+        "reorder_rate": 0.4327
+      },
+      {
+        "department": "breakfast",
+        "lines": 709569,
+        "eligible_lines": 662309,
+        "share_pct": 2.1877,
+        "reorder_rate": 0.6009
+      },
+      {
+        "department": "meat seafood",
+        "lines": 708931,
+        "eligible_lines": 661564,
+        "share_pct": 2.1857,
+        "reorder_rate": 0.6083
+      },
+      {
+        "department": "personal care",
+        "lines": 447123,
+        "eligible_lines": 415841,
+        "share_pct": 1.3785,
+        "reorder_rate": 0.3453
+      },
+      {
+        "department": "babies",
+        "lines": 423802,
+        "eligible_lines": 401315,
+        "share_pct": 1.3066,
+        "reorder_rate": 0.6114
+      },
+      {
+        "department": "international",
+        "lines": 269253,
+        "eligible_lines": 250293,
+        "share_pct": 0.8301,
+        "reorder_rate": 0.3972
+      },
+      {
+        "department": "alcohol",
+        "lines": 153696,
+        "eligible_lines": 140982,
+        "share_pct": 0.4739,
+        "reorder_rate": 0.6213
+      },
+      {
+        "department": "pets",
+        "lines": 97724,
+        "eligible_lines": 91101,
+        "share_pct": 0.3013,
+        "reorder_rate": 0.645
+      },
+      {
+        "department": "missing",
+        "lines": 69145,
+        "eligible_lines": 66879,
+        "share_pct": 0.2132,
+        "reorder_rate": 0.4093
+      },
+      {
+        "department": "other",
+        "lines": 36291,
+        "eligible_lines": 33925,
+        "share_pct": 0.1119,
+        "reorder_rate": 0.4364
+      },
+      {
+        "department": "bulk",
+        "lines": 34573,
+        "eligible_lines": 32812,
+        "share_pct": 0.1066,
+        "reorder_rate": 0.608
+      }
+    ],
+    "top_aisles_by_rate": [
+      {
+        "aisle": "milk",
+        "lines": 891015,
+        "eligible_lines": 840656,
+        "reorder_rate": 0.8282
+      },
+      {
+        "aisle": "water seltzer sparkling water",
+        "lines": 841533,
+        "eligible_lines": 792120,
+        "reorder_rate": 0.7751
+      },
+      {
+        "aisle": "fresh fruits",
+        "lines": 3642188,
+        "eligible_lines": 3426297,
+        "reorder_rate": 0.7634
+      },
+      {
+        "aisle": "eggs",
+        "lines": 452134,
+        "eligible_lines": 423833,
+        "reorder_rate": 0.7525
+      },
+      {
+        "aisle": "packaged produce",
+        "lines": 276028,
+        "eligible_lines": 257906,
+        "reorder_rate": 0.7393
+      },
+      {
+        "aisle": "soy lactosefree",
+        "lines": 638253,
+        "eligible_lines": 599191,
+        "reorder_rate": 0.7377
+      },
+      {
+        "aisle": "yogurt",
+        "lines": 1452343,
+        "eligible_lines": 1362125,
+        "reorder_rate": 0.732
+      },
+      {
+        "aisle": "cream",
+        "lines": 318002,
+        "eligible_lines": 300112,
+        "reorder_rate": 0.7259
+      },
+      {
+        "aisle": "bread",
+        "lines": 584834,
+        "eligible_lines": 547765,
+        "reorder_rate": 0.7155
+      },
+      {
+        "aisle": "refrigerated",
+        "lines": 575881,
+        "eligible_lines": 539811,
+        "reorder_rate": 0.7076
+      },
+      {
+        "aisle": "energy sports drinks",
+        "lines": 103615,
+        "eligible_lines": 96651,
+        "reorder_rate": 0.6964
+      },
+      {
+        "aisle": "breakfast bakery",
+        "lines": 250770,
+        "eligible_lines": 235274,
+        "reorder_rate": 0.6941
+      },
+      {
+        "aisle": "white wines",
+        "lines": 30558,
+        "eligible_lines": 28053,
+        "reorder_rate": 0.6863
+      },
+      {
+        "aisle": "soft drinks",
+        "lines": 357537,
+        "eligible_lines": 333071,
+        "reorder_rate": 0.6858
+      },
+      {
+        "aisle": "packaged vegetables fruits",
+        "lines": 1765313,
+        "eligible_lines": 1654898,
+        "reorder_rate": 0.6811
+      }
+    ]
+  }
+}

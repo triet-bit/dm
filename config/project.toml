@@ -1,0 +1,22 @@
+[paths]
+data_dir = "data"
+docs_dir = "docs"
+artifacts_dir = "artifacts"
+
+[data]
+orders_file = "orders.csv"
+prior_items_file = "order_products__prior.csv"
+train_items_file = "order_products__train.csv"
+products_file = "products.csv"
+aisles_file = "aisles.csv"
+departments_file = "departments.csv"
+
+[reproducibility]
+random_seed = 42
+
+[association_rules]
+min_support = 0.01
+min_confidence = 0.20
+
+[reorder_prediction]
+validation_strategy = "temporal"

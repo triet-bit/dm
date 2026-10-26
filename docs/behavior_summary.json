@@ -1,0 +1,107 @@
+{
+  "source": {
+    "orders_per_customer": "data/orders.csv",
+    "timing_and_gaps": "data/orders_prior.csv",
+    "basket": "data/order_products__prior.csv"
+  },
+  "orders_per_customer": {
+    "users": 206209,
+    "orders": 3421083,
+    "min": 4,
+    "max": 100,
+    "mean": 16.5904,
+    "median": 10.0,
+    "q25": 6.0,
+    "q75": 20.0,
+    "mode": 4,
+    "share_le_5_pct": 21.132,
+    "share_le_10_pct": 50.683,
+    "share_gt_50_pct": 5.2907,
+    "at_cap_100": 1374
+  },
+  "order_timing": {
+    "orders": 3214874,
+    "dow_share_pct": {
+      "0": 17.3497,
+      "1": 17.3165,
+      "2": 13.7472,
+      "3": 12.8279,
+      "4": 12.4799,
+      "5": 13.2503,
+      "6": 13.0284
+    },
+    "hour_share_pct": {
+      "0": 0.6648,
+      "1": 0.3607,
+      "2": 0.2199,
+      "3": 0.1593,
+      "4": 0.161,
+      "5": 0.2791,
+      "6": 0.8956,
+      "7": 2.6955,
+      "8": 5.2357,
+      "9": 7.574,
+      "10": 8.4571,
+      "11": 8.3364,
+      "12": 7.9694,
+      "13": 8.1239,
+      "14": 8.2602,
+      "15": 8.2781,
+      "16": 7.9614,
+      "17": 6.659,
+      "18": 5.319,
+      "19": 4.0941,
+      "20": 3.0517,
+      "21": 2.2843,
+      "22": 1.7898,
+      "23": 1.17
+    },
+    "peak_dow": 0,
+    "peak_dow_share_pct": 17.3497,
+    "peak_hour": 10,
+    "peak_hour_share_pct": 8.4571,
+    "peak_cell": {
+      "dow": 1,
+      "hour": 10,
+      "share_pct": 1.6486
+    }
+  },
+  "days_since_prior_order": {
+    "prior_orders": 3214874,
+    "first_orders_nan": 206209,
+    "transitions": 3008665,
+    "zero_day_transitions": 64436,
+    "zero_day_share_pct": 2.1417,
+    "mean": 10.7072,
+    "median": 7.0,
+    "q25": 4.0,
+    "q75": 15.0,
+    "share_le_7_pct": 51.8981,
+    "share_30_pct": 10.1752
+  },
+  "basket_size": {
+    "orders": 3214874,
+    "items": 32434489,
+    "min": 1,
+    "max": 145,
+    "mean": 10.0889,
+    "median": 8.0,
+    "q25": 5.0,
+    "q75": 14.0,
+    "share_size_1_pct": 4.8757,
+    "share_le_5_pct": 31.1421,
+    "share_ge_20_pct": 10.9337,
+    "orders_without_items": 0
+  },
+  "basket_variation": {
+    "consecutive_pairs": 3008665,
+    "mean_abs_change": 4.7197,
+    "median_abs_change": 3.0,
+    "q75_abs_change": 6.0,
+    "share_unchanged_pct": 10.6821,
+    "share_increase_pct": 44.7456,
+    "share_decrease_pct": 44.5723,
+    "mean_signed_change": 0.0205,
+    "lag1_r_pooled": 0.5783
+  }
+}

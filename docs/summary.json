@@ -1,0 +1,24 @@
+{
+  "eval_set_counts": {
+    "prior": 3214874,
+    "train": 131209,
+    "test": 75000
+  },
+  "missing_columns": [
+    {
+      "file": "orders.csv",
+      "column": "days_since_prior_order",
+      "missing_pct": 6.027594185817766,
+      "rows": 3421083
+    }
+  ],
+  "orders_per_customer": {
+    "users": 206209,
+    "min": 4,
+    "max": 100,
+    "mean": 16.590367054784224,
+    "median": 10.0,
+    "q25": 6.0,
+    "q75": 20.0
+  }
+}
