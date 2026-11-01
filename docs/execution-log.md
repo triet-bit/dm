@@ -103,3 +103,71 @@ Nhật ký này liên kết từng lần chạy với số liệu, bảng hoặc
 - Recorded values: 210 cặp department, lift 0,11 – 3,10, 185 cặp lift > 1; produce + dairy eggs support 55,05% (1.769.735 đơn), lift 1,08; alcohol + other lift cao nhất 3,10; Spearman support–lift 0,5607 (44.850 cặp) và 0,0286 (4.677 cặp support ≥ 0,05%, p = 0,050); 15 cặp có số đơn cao nhất lift 1,44 – 3,00; 49/50 cặp top số đơn có lift > 1
 - Tests: `tests/test_eda_extra.py` (`department_cooccurrence`, `support_lift`); `python -m pytest` 16 passed
 - Note: ma trận đồng xuất hiện department dùng mảng bool theo đơn để tránh đếm đúp khi một đơn nằm ở hai chunk.
+
+## 2026-10-26 09:17 GMT+07:00 — Verify commentary figures and remove bold from report text
+
+- Report updated: `docs/report.md` mục 5, 6, 20 (số liệu trong phần Nhận xét); bỏ in đậm ở phần text và nhận xét mục 1–22 (giữ in đậm ở tiêu đề bảng và hàng tổng trong bảng)
+- Command/script: inline `.venv/bin/python` (pandas) — not saved as script
+- Input/source: `data/orders.csv`, `data/order_products__prior.csv`
+- Parameters/seed: not applicable; kích thước giỏ = số dòng order–product mỗi đơn `prior`; tỉ lệ mua lại của khách tính trên dòng của đơn `order_number ≥ 2`
+- Output: `docs/report.md`
+- Recorded values: mode kích thước giỏ 5 item (228.330 đơn, 7,10%), 6 item (227.675 đơn, 7,08%); đơn ≥ 40 item 0,50%; đơn ≤ 8 item 51,39%, ≤ 14 item 77,82%; `days_since_prior_order` 7 ngày 10,18%, 14 ngày 3,09%, 21 ngày 1,37%, 28 ngày 0,79%, 30 ngày 10,18%; 11 sản phẩm trong catalog không xuất hiện trong `prior`; khách có tỉ lệ mua lại 0% là 1,48%, 100% là 0,47%; khách có giỏ trung bình 5–13 item là 56,15%
+- Tests: not applicable
+- Note: `.venv` được tạo mới và cài `requirements.txt`.
+
+## 2026-10-26 09:40 GMT+07:00 — Add dataset overview section
+
+- Report updated: `docs/report.md` mục 0 (Tổng quan về dataset) và danh sách mục ở đầu report
+- Command/script: inline `.venv/bin/python` (pandas) kiểm tra schema, khoá và miền giá trị; `ls -la data/` cho dung lượng file — not saved as script
+- Input/source: `data/orders.csv`, `data/order_products__prior.csv`, `data/order_products__train.csv`, `data/products.csv`, `data/aisles.csv`, `data/departments.csv`
+- Parameters/seed: not applicable
+- Output: `docs/report.md`, `docs/schema.dbml`
+- Recorded values: số dòng 6 file (3.421.083 / 32.434.489 / 1.384.617 / 49.688 / 134 / 21); miền giá trị `order_number` 1–100, `order_dow` 0–6, `order_hour_of_day` 0–23, `days_since_prior_order` 0–30, `add_to_cart_order` 1–145 (prior) và 1–80 (train); 0 cặp `(order_id, product_id)` trùng trong `order_products__prior`; 0 cặp `(user_id, order_number)` trùng; mọi `order_id`/`product_id` trong `order_products__*` tồn tại trong `orders`/`products`; 206.209 khách, mỗi khách đúng 1 đơn `train` hoặc `test` (131.209 / 75.000)
+- Tests: not applicable
+- Note: thông tin nguồn (Kaggle 2017) và việc dữ liệu đã ẩn danh là mô tả chung về bộ dữ liệu, không đo từ file.
+
+## 2026-10-26 09:55 GMT+07:00 — Extend section 4 commentary
+
+- Report updated: `docs/report.md` mục 4 (Nhận xét)
+- Command/script: inline `.venv/bin/python` (pandas crosstab `order_dow` × `order_hour_of_day`, chuẩn hoá theo ngày) — not saved as script
+- Input/source: `data/orders_prior.csv`
+- Parameters/seed: not applicable
+- Output: `docs/report.md`
+- Recorded values: ngày 0 + 1 chiếm 34,67% số đơn; giờ cao điểm theo ngày: ngày 0 và 6 lúc 14 giờ (9,05% và 8,62% đơn của ngày), ngày 1–5 lúc 10 giờ (8,24% – 9,52%); tỉ lệ giờ 10 / giờ 3 ≈ 53,1 lần
+- Tests: not applicable
+- Note: not applicable
+
+## 2026-11-01 09:52 GMT+07:00 — Clarify section 13 sample metrics
+
+- Report updated: `docs/report.md` mục 13 (chuẩn hoá bảng định nghĩa và công thức tính các chỉ số mẫu)
+- Command/script: not applicable
+- Input/source: `docs/repeat_summary.json`
+- Parameters/seed: not applicable
+- Output: `docs/report.md`
+- Recorded values: 131.209 khách train; 20.641.991 dòng prior của mẫu; 8.474.661 cặp duy nhất (khách, sản phẩm); 1.384.617 dòng train, 828.824 dòng mua lại (59,86%); mean 6,32 sản phẩm mua lại/đơn; xác suất mua lại theo cặp 9,78%
+- Tests: not applicable
+- Note: chuyển danh sách số liệu rời rạc thành bảng có mô tả cách tính và công thức đối chiếu, không thay đổi số liệu gốc.
+
+## 2026-11-01 11:12 GMT+07:00 — Merge section 16 into section 0 and renumber sections
+
+- Report updated: `docs/report.md` mục 0 (thêm mục 0.1 Quy mô bảng và số thực thể từ mục 16 cũ), xóa mục 16 cũ và đánh số lại mục 16–24
+- Command/script: not applicable
+- Input/source: `docs/report.md`
+- Parameters/seed: not applicable
+- Output: `docs/report.md`
+- Recorded values: 49.688 sản phẩm catalog, 49.677 sản phẩm prior, 134 aisle, 21 department; phân phối sản phẩm theo 21 department; Figure 17 overview
+- Tests: not applicable
+- Note: ghép nội dung quy mô bảng và số thực thể lên mục 0 để nhóm toàn bộ thông tin tổng quan dataset vào đầu tài liệu; sửa số thứ tự các mục 17–25 thành 16–24.
+
+## 2026-11-01 15:09 GMT+07:00 — Complete section 20 introductory framing
+
+- Report updated: `docs/report.md` mục 20 (Nhóm hành vi khách hàng)
+- Command/script: not applicable
+- Input/source: `docs/customer_summary.json`
+- Parameters/seed: not applicable
+- Output: `docs/report.md`
+- Recorded values: 4 đặc trưng phân tích (`mean_gap`, `mean_basket`, `distinct_products`, `reorder_rate`); biến đổi `log1p` và z-score; n = 206.209 khách
+- Tests: not applicable
+- Note: bổ sung hoàn chỉnh đoạn văn mở đầu và 4 câu hỏi định hình 4 đặc trưng hành vi khách hàng ở mục 20.
+
+
